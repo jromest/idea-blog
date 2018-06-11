@@ -3,7 +3,7 @@ import Link from 'gatsby-link'
 import Helmet from 'react-helmet'
 
 const Template = ({ data }) => {
-  const { markdwonRemark: post } = data
+  const { markdownRemark: post } = data
   const { frontmatter, html } = post
   const { title, date } = frontmatter
 
