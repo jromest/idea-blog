@@ -2,6 +2,7 @@ module.exports = {
   siteMetadata: {
     title: 'Idea Blog',
   },
+  pathPrefix: '/idea-blog',
   plugins: [
     'gatsby-plugin-react-helmet',
     'gatsby-transformer-remark',
