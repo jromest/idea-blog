@@ -6,13 +6,33 @@ import Header from '../components/header'
 import './global.css'
 import './layout.css'
 
+const metaKeywords = [
+  'javascript',
+  'js',
+  'python',
+  'py',
+  'website',
+  'web',
+  'development',
+  'html',
+  'css',
+  'react',
+  'api',
+  'front',
+  'back',
+  'end',
+  'learn',
+  'tutorial',
+  'programming'
+];
+
 const Layout = ({ children, data }) => (
   <div>
     <Helmet
       title={data.site.siteMetadata.title}
       meta={[
         { name: 'description', content: 'Sample' },
-        { name: 'keywords', content: 'sample, something' },
+        { name: 'keywords', content: metaKeywords.join(', ') },
       ]}
     />
     <Header siteTitle={data.site.siteMetadata.title} />
