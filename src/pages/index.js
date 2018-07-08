@@ -9,7 +9,7 @@ const IndexPage = ({ data }) => {
       {posts.map(({ node: post }) => {
         const { frontmatter } = post
         return (
-          <div>
+          <div key={post.id}>
             <h1>
               <Link to={frontmatter.path}>{frontmatter.title}</Link>
             </h1>
