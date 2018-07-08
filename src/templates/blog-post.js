@@ -10,12 +10,12 @@ const Template = ({ data }) => {
   return (
     <div>
       <Helmet title={title} />
-      <div>
+      <div className='blog-post'>
         <h1>{title}</h1>
         <h3>{date}</h3>
         <div dangerouslySetInnerHTML={{ __html: html }} />
       </div>
-      <Link to="/">Go back home...</Link>
+      <Link to='/'>Go back home...</Link>
     </div>
   )
 }
