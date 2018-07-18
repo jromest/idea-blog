@@ -6,7 +6,7 @@ const Hero = ({ siteTitle, siteDescription }) => (
   <div className="hero-container">
     <div className="hero-wrapper">
       <h1>{siteTitle}</h1>
-      <span className="hero-subtitle">{siteDescription}</span>
+      <span>{siteDescription}</span>
     </div>
   </div>
 )
