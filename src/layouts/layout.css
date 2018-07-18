@@ -9,12 +9,15 @@ a {
 }
 
 .app-wrapper {
-  margin: 0 auto;
-  max-width: 960px;
-  padding: 0px 1.0875rem 1.45rem;
-  padding-top: 0;
+  background-color: #fcfcfc; 
 }
 
-.app-wrapper .blog-post a {
+.blog {
+  margin: 0 auto;
+  max-width: 960px;
+  padding: 2.5rem 1.45rem;
+}
+
+.blog-post a {
   text-decoration: underline;
 }

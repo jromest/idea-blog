@@ -8,7 +8,7 @@ const Template = ({ data }) => {
   const { title, date } = frontmatter
 
   return (
-    <div>
+    <div className='blog'>
       <Helmet title={title} />
       <div className='blog-post'>
         <h1>{title}</h1>

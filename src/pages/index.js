@@ -1,28 +1,34 @@
 import React from 'react'
 import Link from 'gatsby-link'
 
+import Hero from '../components/Hero/hero'
+
 const IndexPage = ({ data }) => {
   const { edges: posts } = data.allMarkdownRemark
 
   return (
     <div>
-      {posts.map(({ node: post }) => {
-        const { frontmatter } = post
-        return (
-          <div key={post.id}>
-            <h1>
-              <Link to={frontmatter.path}>{frontmatter.title}</Link>
-            </h1>
-            <h3>{frontmatter.date}</h3>
-            <p>{post.excerpt}</p>
-          </div>
-        )
-      })}
+      <Hero />
+      <div className='blog'>
+        {posts.map(({ node: post }) => {
+          const { frontmatter } = post
+          return (
+            <div key={post.id}>
+              <h1>
+                <Link to={frontmatter.path}>{frontmatter.title}</Link>
+              </h1>
+              <h3>{frontmatter.date}</h3>
+              <p>{post.excerpt}</p>
+            </div>
+          )
+        })}
+      
 
-      <h2>Hi people</h2>
-      <p>Welcome to your new Gatsby site.</p>
-      <p>Now go build something great.</p>
-      <Link to="/page-2/">Go to page 2</Link>
+        <h2>Hi people</h2>
+        <p>Welcome to your new Gatsby site.</p>
+        <p>Now go build something great.</p>
+        <Link to='page-2/'>Go to page 2</Link>
+      </div>
     </div>
   )
 }
