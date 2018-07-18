@@ -11,8 +11,8 @@ const Template = ({ data }) => {
     <div className="blog">
       <Helmet title={title} />
       <div className="blog-post">
-        <h1>{title}</h1>
-        <h3>{date}</h3>
+        <h1 className="blog-title">{title}</h1>
+        <div className="blog-date">{date}</div>
         <div dangerouslySetInnerHTML={{ __html: html }} />
       </div>
       <Link to="/">Go back home...</Link>
