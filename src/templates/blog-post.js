@@ -8,14 +8,14 @@ const Template = ({ data }) => {
   const { title, date } = frontmatter
 
   return (
-    <div className='blog'>
+    <div className="blog">
       <Helmet title={title} />
-      <div className='blog-post'>
+      <div className="blog-post">
         <h1>{title}</h1>
         <h3>{date}</h3>
         <div dangerouslySetInnerHTML={{ __html: html }} />
       </div>
-      <Link to='/'>Go back home...</Link>
+      <Link to="/">Go back home...</Link>
     </div>
   )
 }

@@ -23,24 +23,25 @@ const metaKeywords = [
   'end',
   'learn',
   'tutorial',
-  'programming'
-];
+  'programming',
+]
 
-const Layout = ({ children, data }) => (
-  <div>
-    <Helmet
-      title={data.site.siteMetadata.title}
-      meta={[
-        { name: 'description', content: 'Sample' },
-        { name: 'keywords', content: metaKeywords.join(', ') },
-      ]}
-    />
-    <Header siteTitle={data.site.siteMetadata.title} />
-    <div className='app-wrapper'>
-      {children()}
+const Layout = ({ children, data }) => {
+  const { siteMetadata } = data.site
+  return (
+    <div>
+      <Helmet
+        title={siteMetadata.title}
+        meta={[
+          { name: 'description', content: siteMetadata.description },
+          { name: 'keywords', content: metaKeywords.join(', ') },
+        ]}
+      />
+      <Header siteTitle={data.site.siteMetadata.title} />
+      <div className="app-wrapper">{children()}</div>
     </div>
-  </div>
-)
+  )
+}
 
 Layout.propTypes = {
   children: PropTypes.func,
@@ -53,6 +54,7 @@ export const query = graphql`
     site {
       siteMetadata {
         title
+        description
       }
     }
   }
