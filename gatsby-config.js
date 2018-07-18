@@ -1,7 +1,7 @@
 module.exports = {
   siteMetadata: {
     title: 'Idea Blog',
-    description: 'I write about programming, javascript and more...',
+    description: 'I write about web development, programming, and more...',
   },
   pathPrefix: '/idea-blog',
   plugins: [

@@ -18,10 +18,10 @@ const IndexPage = ({ data }) => {
           const { frontmatter } = post
           return (
             <div className="blog-listing" key={post.id}>
-              <h1>
+              <h2 className="blog-title">
                 <Link to={frontmatter.path}>{frontmatter.title}</Link>
-              </h1>
-              <h3>{frontmatter.date}</h3>
+              </h2>
+              <div className="blog-date">{frontmatter.date}</div>
               <p>{post.excerpt}</p>
             </div>
           )

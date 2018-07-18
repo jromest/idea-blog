@@ -5,7 +5,7 @@ import './hero.css'
 const Hero = ({ siteTitle, siteDescription }) => (
   <div className="hero-container">
     <div className="hero-wrapper">
-      <span className="hero-title">{siteTitle}</span>
+      <h1>{siteTitle}</h1>
       <span className="hero-subtitle">{siteDescription}</span>
     </div>
   </div>
