@@ -2,6 +2,11 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import Helmet from 'react-helmet'
 
+require('typeface-lora')
+require('typeface-karla')
+
+import './prism-okaidia.css'
+
 import Header from '../components/Header/header'
 import './global.css'
 import './layout.css'

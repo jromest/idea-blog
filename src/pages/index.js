@@ -1,9 +1,6 @@
 import React from 'react'
 import Link from 'gatsby-link'
 
-require('typeface-lora')
-require('typeface-karla')
-
 import Hero from '../components/Hero/hero'
 
 const IndexPage = ({ data }) => {
