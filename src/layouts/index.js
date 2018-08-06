@@ -43,7 +43,7 @@ const Layout = ({ children, data }) => {
           { name: 'keywords', content: metaKeywords.join(', ') },
         ]}
       />
-      <Header siteTitle={siteMetadata.title} />
+      <Header {...siteMetadata} title={siteMetadata.title} />
       <div className="app-wrapper">{children()}</div>
     </div>
   )
@@ -61,6 +61,9 @@ export const query = graphql`
       siteMetadata {
         title
         description
+        twitter
+        github
+        codepen
       }
     }
   }

@@ -9,10 +9,7 @@ const IndexPage = ({ data }) => {
 
   return (
     <div>
-      <Hero
-        siteTitle={siteMetadata.title}
-        siteDescription={siteMetadata.description}
-      />
+      <Hero {...siteMetadata} />
       <div className="blog">
         {posts.map(({ node: post }) => {
           const { frontmatter } = post
