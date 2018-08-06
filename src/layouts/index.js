@@ -5,11 +5,11 @@ import Helmet from 'react-helmet'
 require('typeface-lora')
 require('typeface-karla')
 
-import './prism-okaidia.css'
+import '../styles/prism-okaidia.css'
 
 import Header from '../components/Header/header'
-import './global.css'
-import './layout.css'
+import '../styles/global.css'
+import '../styles/layout.css'
 
 const metaKeywords = [
   'javascript',
