@@ -8,6 +8,7 @@ require('typeface-karla')
 import '../styles/prism-okaidia.css'
 
 import Header from '../components/Header/header'
+import Footer from '../components/Footer/footer'
 
 import '../styles/global.css'
 import '../styles/layout.css'
@@ -45,6 +46,7 @@ const Layout = ({ children, data }) => {
       />
       <Header {...siteMetadata} title={siteMetadata.title} />
       <div className="app-wrapper">{children()}</div>
+      <Footer {...siteMetadata} title={siteMetadata.title} />
     </div>
   )
 }
