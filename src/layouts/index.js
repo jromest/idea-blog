@@ -2,31 +2,54 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import Helmet from 'react-helmet'
 
-import Header from '../components/header'
-import './index.css'
+require('typeface-lora')
+require('typeface-karla')
 
-const Layout = ({ children, data }) => (
-  <div>
-    <Helmet
-      title={data.site.siteMetadata.title}
-      meta={[
-        { name: 'description', content: 'Sample' },
-        { name: 'keywords', content: 'sample, something' },
-      ]}
-    />
-    <Header siteTitle={data.site.siteMetadata.title} />
-    <div
-      style={{
-        margin: '0 auto',
-        maxWidth: 960,
-        padding: '0px 1.0875rem 1.45rem',
-        paddingTop: 0,
-      }}
-    >
-      {children()}
+import '../styles/prism-okaidia.css'
+
+import Header from '../components/Header/header'
+import Footer from '../components/Footer/footer'
+
+import '../styles/global.css'
+import '../styles/layout.css'
+
+const metaKeywords = [
+  'javascript',
+  'js',
+  'python',
+  'py',
+  'website',
+  'web',
+  'development',
+  'html',
+  'css',
+  'react',
+  'api',
+  'front',
+  'back',
+  'end',
+  'learn',
+  'tutorial',
+  'programming',
+]
+
+const Layout = ({ children, data }) => {
+  const { siteMetadata } = data.site
+  return (
+    <div>
+      <Helmet
+        title={siteMetadata.title}
+        meta={[
+          { name: 'description', content: siteMetadata.description },
+          { name: 'keywords', content: metaKeywords.join(', ') },
+        ]}
+      />
+      <Header {...siteMetadata} title={siteMetadata.title} />
+      <div className="app-wrapper">{children()}</div>
+      <Footer {...siteMetadata} title={siteMetadata.title} />
     </div>
-  </div>
-)
+  )
+}
 
 Layout.propTypes = {
   children: PropTypes.func,
@@ -39,6 +62,10 @@ export const query = graphql`
     site {
       siteMetadata {
         title
+        description
+        twitter
+        github
+        codepen
       }
     }
   }
