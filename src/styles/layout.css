@@ -2,15 +2,6 @@
   background-color: #ffffff;
 }
 
-.app-wrapper a {
-  color: #243952;
-  text-decoration: none;
-}
-
-.app-wrapper p {
-  line-height: 2rem;
-}
-
 .blog {
   margin: 0 auto;
   max-width: 960px;
@@ -43,13 +34,10 @@
   margin-bottom: 1.45rem;
 }
 
-.read-more a {
-  color: #4484ce;
-}
-
 .blog-post {
   max-width: 700px;
   margin: 0 auto;
+  line-height: 2rem;
 }
 
 .blog-post a {
@@ -64,4 +52,5 @@
   background-color: #ececec;
   border-left: 5px solid #4484ce;
   border-radius: 0.3em;
+  line-height: 1rem;
 }
