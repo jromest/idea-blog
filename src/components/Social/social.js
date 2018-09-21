@@ -8,13 +8,28 @@ import CodepenIcon from './Icons/codepenIcon'
 
 const Social = ({ twitter, github, codepen }) => (
   <div>
-    <a href={twitter} target="_blank" className="social-icon">
+    <a
+      href={twitter}
+      target="_blank"
+      rel="noopener noreferrer"
+      className="social-icon"
+    >
       <TwitterIcon />
     </a>
-    <a href={github} target="_blank" className="social-icon">
+    <a
+      href={github}
+      target="_blank"
+      rel="noopener noreferrer"
+      className="social-icon"
+    >
       <GithubIcon />
     </a>
-    <a href={codepen} target="_blank" className="social-icon">
+    <a
+      href={codepen}
+      target="_blank"
+      rel="noopener noreferrer"
+      className="social-icon"
+    >
       <CodepenIcon />
     </a>
   </div>

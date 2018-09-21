@@ -1,6 +1,7 @@
 import React from 'react'
-import Link from 'gatsby-link'
+import { Link, graphql } from 'gatsby'
 import Helmet from 'react-helmet'
+import Layout from '../components/Layout'
 
 const Template = ({ data }) => {
   const { markdownRemark: post } = data
@@ -8,15 +9,17 @@ const Template = ({ data }) => {
   const { title, date } = frontmatter
 
   return (
-    <div className="blog">
-      <Helmet title={title} />
-      <div className="blog-post">
-        <h1 className="blog-title">{title}</h1>
-        <div className="blog-date">{date}</div>
-        <div dangerouslySetInnerHTML={{ __html: html }} />
+    <Layout>
+      <div className="blog">
+        <Helmet title={title} />
+        <div className="blog-post">
+          <h1 className="blog-title">{title}</h1>
+          <div className="blog-date">{date}</div>
+          <div dangerouslySetInnerHTML={{ __html: html }} />
+        </div>
+        <Link to="/">Go back home...</Link>
       </div>
-      <Link to="/">Go back home...</Link>
-    </div>
+    </Layout>
   )
 }
 

@@ -1,5 +1,6 @@
 import React from 'react'
-import Link from 'gatsby-link'
+import { Link, graphql } from 'gatsby'
+import Layout from '../components/Layout'
 
 import Hero from '../components/Hero/hero'
 
@@ -8,7 +9,7 @@ const IndexPage = ({ data }) => {
   const { siteMetadata } = data.site
 
   return (
-    <div>
+    <Layout>
       <Hero {...siteMetadata} />
       <div className="blog">
         {posts.map(({ node: post }) => {
@@ -32,7 +33,7 @@ const IndexPage = ({ data }) => {
         <p>Now go build something great.</p>
         <Link to="page-2/">Go to page 2</Link>
       </div>
-    </div>
+    </Layout>
   )
 }
 
