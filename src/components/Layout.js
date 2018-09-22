@@ -46,7 +46,9 @@ const Layout = ({ children }) => (
                 content: siteMetadata.metaKeywords.join(', '),
               },
             ]}
-          />
+          >
+            <html lang="en" />
+          </Helmet>
           <Header {...siteMetadata} title={siteMetadata.title} />
           <div className="app-wrapper">{children}</div>
           <Footer {...siteMetadata} title={siteMetadata.title} />
