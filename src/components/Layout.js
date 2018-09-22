@@ -14,26 +14,6 @@ import Footer from './Footer/footer'
 import '../styles/global.css'
 import '../styles/layout.css'
 
-const metaKeywords = [
-  'javascript',
-  'js',
-  'python',
-  'py',
-  'website',
-  'web',
-  'development',
-  'html',
-  'css',
-  'react',
-  'api',
-  'front',
-  'back',
-  'end',
-  'learn',
-  'tutorial',
-  'programming',
-]
-
 const Layout = ({ children }) => (
   <StaticQuery
     query={graphql`
@@ -45,33 +25,34 @@ const Layout = ({ children }) => (
             twitter
             github
             codepen
+            metaKeywords
           }
         }
       }
     `}
-    render={data => (
-      <>
-        <Helmet
-          title={data.site.siteMetadata.title}
-          meta={[
-            {
-              name: 'description',
-              content: data.site.siteMetadata.description,
-            },
-            { name: 'keywords', content: metaKeywords.join(', ') },
-          ]}
-        />
-        <Header
-          {...data.site.siteMetadata}
-          title={data.site.siteMetadata.title}
-        />
-        <div className="app-wrapper">{children}</div>
-        <Footer
-          {...data.site.siteMetadata}
-          title={data.site.siteMetadata.title}
-        />
-      </>
-    )}
+    render={data => {
+      const { siteMetadata } = data.site
+      return (
+        <>
+          <Helmet
+            title={siteMetadata.title}
+            meta={[
+              {
+                name: 'description',
+                content: siteMetadata.description,
+              },
+              {
+                name: 'keywords',
+                content: siteMetadata.metaKeywords.join(', '),
+              },
+            ]}
+          />
+          <Header {...siteMetadata} title={siteMetadata.title} />
+          <div className="app-wrapper">{children}</div>
+          <Footer {...siteMetadata} title={siteMetadata.title} />
+        </>
+      )
+    }}
   />
 )
 
