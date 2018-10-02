@@ -13,9 +13,16 @@
   margin-bottom: 2.5rem;
 }
 
+.blog-separator {
+  height: 5px;
+  width: 50px;
+  background-color: #ffcc33;
+  margin-bottom: 1rem;
+}
+
 .blog-title {
-  margin-bottom: 0.5rem;
-  color: #243952;
+  margin-bottom: 0.25rem;
+  color: #38273a;
 }
 
 .blog-date,
@@ -24,9 +31,13 @@
 }
 
 .blog-date {
-  color: #9b9b9b;
+  color: #666666;
   font-size: 0.9rem;
-  margin-bottom: 1.45rem;
+  margin-bottom: 1rem;
+}
+
+.blog-excerpt {
+  line-height: 2rem;
 }
 
 .read-more {
@@ -34,23 +45,42 @@
   margin-bottom: 1.45rem;
 }
 
-.blog-post {
+.blog-post h1,
+.blog-post h2,
+.blog-post h3,
+.blog-post h4,
+.blog-post h5,
+.blog-post h6,
+.blog-post p,
+.blog-post .blog-date {
   max-width: 700px;
-  margin: 0 auto;
+  margin: 0 auto 1.45rem auto;
   line-height: 2rem;
 }
 
+.blog-post h1 {
+  margin-bottom: 0.5rem;
+}
+
 .blog-post a {
-  border-bottom: 1px solid #243952;
+  border-bottom: 1px solid #38273a;
   padding-bottom: 0.2em;
 }
 
 .blog-post blockquote {
+  font-size: 1.15rem;
   margin: 0;
   margin-bottom: 1.45rem;
-  padding: 1.45rem;
-  background-color: #ececec;
-  border-left: 5px solid #4484ce;
-  border-radius: 0.3em;
-  line-height: 1rem;
+  padding: 1.45rem 2rem;
+  border-left: 5px solid #ffcc33;
+  line-height: 1.5rem;
+}
+
+.blog-post blockquote p {
+  max-width: 100%;
+  margin: 0;
+}
+
+.blog-post pre {
+  margin-bottom: 1.45rem;
 }
