@@ -1,8 +1,7 @@
 import React from 'react'
+import Social from './Social'
 
 import style from '../styles/components/footer.module.scss'
-
-import Social from './Social/social'
 
 const Footer = props => (
   <div className={style.container}>

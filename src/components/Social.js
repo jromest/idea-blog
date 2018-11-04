@@ -1,34 +1,33 @@
 import React from 'react'
+import TwitterIcon from './Icons/twitter'
+import GithubIcon from './Icons/github'
+import CodepenIcon from './Icons/codepen'
 
-import './social.css'
-
-import TwitterIcon from '../Icons/twitter'
-import GithubIcon from '../Icons/github'
-import CodepenIcon from '../Icons/codepen'
+import style from '../styles/components/social.module.scss'
 
 const Social = ({ twitter, github, codepen }) => (
   <div>
     <a
+      className={style.icon}
       href={twitter}
       target="_blank"
       rel="noopener noreferrer"
-      className="social-icon"
     >
       <TwitterIcon />
     </a>
     <a
+      className={style.icon}
       href={github}
       target="_blank"
       rel="noopener noreferrer"
-      className="social-icon"
     >
       <GithubIcon />
     </a>
     <a
+      className={style.icon}
       href={codepen}
       target="_blank"
       rel="noopener noreferrer"
-      className="social-icon"
     >
       <CodepenIcon />
     </a>

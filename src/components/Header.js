@@ -1,7 +1,6 @@
 import React from 'react'
 import { Link } from 'gatsby'
-
-import Social from './Social/social'
+import Social from './Social'
 
 import style from '../styles/components/header.module.scss'
 
