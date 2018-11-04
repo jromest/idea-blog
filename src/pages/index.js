@@ -19,8 +19,9 @@ const IndexPage = ({ data }) => {
               <h2 className="blog-title">
                 <Link to={frontmatter.path}>{frontmatter.title}</Link>
               </h2>
+              <hr className="blog-separator" />
               <div className="blog-date">{frontmatter.date}</div>
-              <p>{post.excerpt}</p>
+              <p className="blog-excerpt">{post.excerpt}</p>
               <div className="read-more">
                 <Link to={frontmatter.path}>Read more &#8594;</Link>
               </div>
