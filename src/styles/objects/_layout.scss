@@ -4,7 +4,7 @@
   * Simple flebox grid layout
   */
 
-.o-row {
+%flex-row {
   display: flex;
 
   @include bp-small {
@@ -12,6 +12,6 @@
   }
 }
 
-.o-col {
+%flex-col {
   flex: 1;
 }
