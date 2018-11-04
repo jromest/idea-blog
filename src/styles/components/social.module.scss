@@ -3,6 +3,7 @@
 @import '../main';
 
 .icon {
+  @include base-link;
   padding: 0 10px;
 
   @include bp-small {

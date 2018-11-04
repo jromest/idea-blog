@@ -17,14 +17,18 @@ const IndexPage = ({ data }) => {
           const { frontmatter } = post
           return (
             <div className={style.listing} key={post.id}>
-              <h2 className={style.title}>
-                <Link to={frontmatter.path}>{frontmatter.title}</Link>
+              <h2>
+                <Link className={style.title} to={frontmatter.path}>
+                  {frontmatter.title}
+                </Link>
               </h2>
               <hr className={style.separator} />
               <div className={style.date}>{frontmatter.date}</div>
               <p className={style.excerpt}>{post.excerpt}</p>
-              <div className={style.readMore}>
-                <Link to={frontmatter.path}>Read more &#8594;</Link>
+              <div className={style.readMoreContainer}>
+                <Link className={style.readMore} to={frontmatter.path}>
+                  Read more &#8594;
+                </Link>
               </div>
             </div>
           )

@@ -3,4 +3,11 @@
 a {
   text-decoration: none;
   color: $base-primary-color;
+  border-bottom: 1px solid $base-primary-color;
+  padding-bottom: 0.2em;
+}
+
+@mixin base-link {
+  border: none;
+  padding: 0;
 }
