@@ -8,7 +8,7 @@ import 'typeface-karla'
 
 import '../styles/prism-okaidia.css'
 
-import Header from './Header/header'
+import Header from './Header'
 import Footer from './Footer/footer'
 
 // import '../styles/global.css'
