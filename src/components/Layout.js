@@ -11,10 +11,10 @@ import '../styles/prism-okaidia.css'
 import Header from './Header/header'
 import Footer from './Footer/footer'
 
-import '../styles/global.css'
-import '../styles/layout.css'
+// import '../styles/global.css'
+// import '../styles/layout.css'
 
-// import '../styles/main.scss'
+import '../styles/main.scss'
 
 const Layout = ({ children }) => (
   <StaticQuery
