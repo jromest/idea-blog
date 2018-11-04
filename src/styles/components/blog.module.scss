@@ -22,8 +22,11 @@
 }
 
 .title {
-  @include base-link;
   margin-bottom: 0.5em;
+}
+
+.link {
+  @include base-link;
 }
 
 .date {
@@ -33,7 +36,7 @@
 }
 
 .excerpt {
-  line-height: 1.5 * $base-spacing-unit;
+  line-height: 1.5 * $base-line-height;
 }
 
 .readMoreContainer {

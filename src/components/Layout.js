@@ -8,8 +8,8 @@ import Footer from './Footer'
 // import 'typeface-lora'
 // import 'typeface-karla'
 
-import '../styles/prism-okaidia.css'
 import '../styles/main.scss'
+import '../styles/prism-okaidia.css'
 
 const Layout = ({ children }) => (
   <StaticQuery
