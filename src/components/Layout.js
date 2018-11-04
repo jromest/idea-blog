@@ -14,6 +14,8 @@ import Footer from './Footer/footer'
 import '../styles/global.css'
 import '../styles/layout.css'
 
+// import '../styles/main.scss'
+
 const Layout = ({ children }) => (
   <StaticQuery
     query={graphql`

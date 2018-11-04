@@ -27,6 +27,7 @@ module.exports = {
   },
   pathPrefix: '/idea-blog',
   plugins: [
+    'gatsby-plugin-sass',
     'gatsby-plugin-react-helmet',
     'gatsby-transformer-remark',
     {
