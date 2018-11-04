@@ -2,9 +2,9 @@ import React from 'react'
 
 import './social.css'
 
-import TwitterIcon from './Icons/twitterIcon'
-import GithubIcon from './Icons/githubIcon'
-import CodepenIcon from './Icons/codepenIcon'
+import TwitterIcon from '../Icons/twitter'
+import GithubIcon from '../Icons/github'
+import CodepenIcon from '../Icons/codepen'
 
 const Social = ({ twitter, github, codepen }) => (
   <div>
