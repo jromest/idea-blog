@@ -47,7 +47,7 @@ const Layout = ({ children }) => (
             <html lang="en" />
           </Helmet>
           <Header {...siteMetadata} title={siteMetadata.title} />
-          <div>{children}</div>
+          <main>{children}</main>
           <Footer {...siteMetadata} title={siteMetadata.title} />
         </>
       )
