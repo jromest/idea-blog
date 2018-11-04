@@ -13,20 +13,20 @@
   margin-bottom: 2 * $base-spacing-unit;
 }
 
+.title {
+  margin-bottom: 0.25em;
+}
+
+.link {
+  @include base-link;
+}
+
 .separator {
   height: 5px;
   width: 50px;
   background-color: $base-secondary-color;
   margin-bottom: $base-spacing-unit;
   border: none;
-}
-
-.title {
-  margin-bottom: 0.5em;
-}
-
-.link {
-  @include base-link;
 }
 
 .date {

@@ -21,11 +21,11 @@
     padding: 1.45rem 2rem;
     border-left: 5px solid $base-secondary-color;
     line-height: 1.5rem;
-  }
 
-  blockquote p {
-    max-width: 100%;
-    margin: 0;
+    p {
+      max-width: 100%;
+      margin: 0;
+    }
   }
 
   pre {
