@@ -7,13 +7,9 @@
 }
 
 .wrapper {
-  @extend %container-wrapper;
+  @include container($wrapper-width);
   @extend %flex-row;
   justify-content: space-between;
   align-items: center;
   color: $white;
-}
-
-.wrapperItem {
-  @extend %flex-col;
 }
