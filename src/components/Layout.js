@@ -2,18 +2,13 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import Helmet from 'react-helmet'
 import { StaticQuery, graphql } from 'gatsby'
-
-import 'typeface-lora'
-import 'typeface-karla'
-
-import '../styles/prism-okaidia.css'
-
 import Header from './Header'
 import Footer from './Footer'
 
-// import '../styles/global.css'
-// import '../styles/layout.css'
+// import 'typeface-lora'
+// import 'typeface-karla'
 
+import '../styles/prism-okaidia.css'
 import '../styles/main.scss'
 
 const Layout = ({ children }) => (
@@ -52,7 +47,7 @@ const Layout = ({ children }) => (
             <html lang="en" />
           </Helmet>
           <Header {...siteMetadata} title={siteMetadata.title} />
-          <div className="app-wrapper">{children}</div>
+          <div>{children}</div>
           <Footer {...siteMetadata} title={siteMetadata.title} />
         </>
       )

@@ -1,8 +1,9 @@
 import React from 'react'
 import { Link, graphql } from 'gatsby'
 import Layout from '../components/Layout'
-
 import Hero from '../components/Hero'
+
+import style from '../styles/components/blog.module.scss'
 
 const IndexPage = ({ data }) => {
   const { edges: posts } = data.allMarkdownRemark
@@ -11,18 +12,18 @@ const IndexPage = ({ data }) => {
   return (
     <Layout>
       <Hero {...siteMetadata} />
-      <div className="blog">
+      <div className={style.wrapper}>
         {posts.map(({ node: post }) => {
           const { frontmatter } = post
           return (
-            <div className="blog-listing" key={post.id}>
-              <h2 className="blog-title">
+            <div className={style.listing} key={post.id}>
+              <h2 className={style.title}>
                 <Link to={frontmatter.path}>{frontmatter.title}</Link>
               </h2>
-              <hr className="blog-separator" />
-              <div className="blog-date">{frontmatter.date}</div>
-              <p className="blog-excerpt">{post.excerpt}</p>
-              <div className="read-more">
+              <hr className={style.separator} />
+              <div className={style.date}>{frontmatter.date}</div>
+              <p className={style.excerpt}>{post.excerpt}</p>
+              <div className={style.readMore}>
                 <Link to={frontmatter.path}>Read more &#8594;</Link>
               </div>
             </div>
