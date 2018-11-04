@@ -2,7 +2,7 @@ import React from 'react'
 import { Link, graphql } from 'gatsby'
 import Layout from '../components/Layout'
 
-import Hero from '../components/Hero/hero'
+import Hero from '../components/Hero'
 
 const IndexPage = ({ data }) => {
   const { edges: posts } = data.allMarkdownRemark
