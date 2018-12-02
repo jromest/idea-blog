@@ -1,11 +1,5 @@
 /* Container */
 
-@mixin container($max-width) {
-  max-width: $max-width;
-  margin: 0 auto;
-  padding: 1.25em 1em;
-}
-
 .container {
   margin: 0 auto;
   padding: 1.25em 1em;

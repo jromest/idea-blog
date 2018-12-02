@@ -4,18 +4,6 @@
   * Simple flebox grid layout
   */
 
-@mixin flex-row {
-  display: flex;
-
-  @include bp-small {
-    display: block;
-  }
-}
-
-@mixin flex-col {
-  flex: 1;
-}
-
 .flex-row {
   display: flex;
 
