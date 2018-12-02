@@ -5,7 +5,7 @@ import Social from './Social'
 const Header = props => (
   <header className="header">
     <div className="container container-main header-wrapper">
-      <Link to="/" className="title">
+      <Link to="/" className="title base-link">
         {props.title}
       </Link>
       <Social {...props} />
