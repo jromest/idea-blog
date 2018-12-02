@@ -1,9 +1,7 @@
 /* Social Component Style */
 
-@import '../main';
-
-.icon {
-  @include base-link;
+.social-icon {
+  border: none;
   padding: 0 10px;
 
   @include bp-small {
