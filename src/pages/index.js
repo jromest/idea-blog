@@ -3,8 +3,6 @@ import { Link, graphql } from 'gatsby'
 import Layout from '../components/Layout'
 import Hero from '../components/Hero'
 
-import style from '../styles/components/blog.module.scss'
-
 const IndexPage = ({ data }) => {
   const { edges: posts } = data.allMarkdownRemark
   const { siteMetadata } = data.site
@@ -12,21 +10,21 @@ const IndexPage = ({ data }) => {
   return (
     <Layout>
       <Hero {...siteMetadata} />
-      <div className={style.wrapper}>
+      <div className="container container-main blog">
         {posts.map(({ node: post }) => {
           const { frontmatter } = post
           return (
-            <div className={style.listing} key={post.id}>
-              <h2 className={style.title}>
-                <Link className={style.link} to={frontmatter.path}>
+            <div className="blog-listing" key={post.id}>
+              <h2 className="blog-title">
+                <Link className="base-link" to={frontmatter.path}>
                   {frontmatter.title}
                 </Link>
               </h2>
-              <hr className={style.separator} />
-              <div className={style.date}>{frontmatter.date}</div>
-              <p className={style.excerpt}>{post.excerpt}</p>
-              <div className={style.readMoreContainer}>
-                <Link className={style.readMore} to={frontmatter.path}>
+              <hr className="blog-separator" />
+              <div className="blog-date">{frontmatter.date}</div>
+              <p className="blog-excerpt">{post.excerpt}</p>
+              <div className="blog-readMore">
+                <Link className="base-link" to={frontmatter.path}>
                   Read more &#8594;
                 </Link>
               </div>
