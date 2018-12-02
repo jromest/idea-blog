@@ -1,11 +1,9 @@
 import React from 'react'
 import Social from './Social'
 
-import style from '../styles/components/footer.module.scss'
-
 const Footer = props => (
-  <footer className={style.container}>
-    <div className={style.wrapper}>
+  <footer className="footer">
+    <div className="container container-main footer-wrapper flex-row">
       <Social {...props} />
       <div>&copy; 2018 {props.title}</div>
     </div>
