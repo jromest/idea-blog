@@ -1,0 +1,56 @@
+/* Bio Section Styles */
+
+.bio-section {
+  background-color: $lighter-gray;
+
+  .bio-container {
+    padding-top: 2 * $base-spacing-unit;
+    padding-bottom: 2 * $base-spacing-unit;
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+
+    @include bp-small {
+      flex-direction: column;
+    }
+
+    .avatar {
+      /* temporary */
+      background-color: #333;
+      height: 80px;
+      width: 80px;
+      /* ------ */
+      border-radius: 50%;
+      margin-bottom: $base-spacing-unit;
+      margin-right: $base-spacing-unit;
+
+      @include bp-small {
+        align-self: center;
+        margin-right: 0;
+      }
+    }
+
+    .bio {
+      &-separator {
+        height: 5px;
+        width: 50px;
+        background-color: $base-secondary-color;
+        margin-bottom: $base-spacing-unit;
+        border: none;
+
+        @include bp-small {
+          margin-right: auto;
+          margin-left: auto;
+        }
+      }
+
+      p {
+        margin-bottom: 0;
+      }
+
+      @include bp-small {
+        text-align: center;
+      }
+    }
+  }
+}

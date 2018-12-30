@@ -2,6 +2,7 @@ import React from 'react'
 import { Link, graphql } from 'gatsby'
 import Layout from '../components/Layout'
 import Hero from '../components/Hero'
+import Bio from '../components/Bio'
 
 const IndexPage = ({ data }) => {
   const { edges: posts } = data.allMarkdownRemark
@@ -29,11 +30,13 @@ const IndexPage = ({ data }) => {
             </div>
           )
         })}
-
         <h2>Hi people</h2>
         <p>Welcome to your new Gatsby site.</p>
         <p>Now go build something great.</p>
         <Link to="page-2/">Go to page 2</Link>
+      </div>
+      <div className="bio-section">
+        <Bio />
       </div>
     </Layout>
   )
