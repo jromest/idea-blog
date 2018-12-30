@@ -5,8 +5,8 @@ import { StaticQuery, graphql } from 'gatsby'
 import Header from './Header'
 import Footer from './Footer'
 
-// import 'typeface-lora'
-// import 'typeface-karla'
+import 'typeface-lora'
+import 'typeface-karla'
 
 import '../styles/main.scss'
 import '../styles/prism-okaidia.css'
