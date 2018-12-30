@@ -24,9 +24,7 @@ const IndexPage = ({ data }) => {
               <div className="blog-date">{frontmatter.date}</div>
               <p className="blog-excerpt">{post.excerpt}</p>
               <div className="blog-readMore">
-                <Link className="base-link" to={frontmatter.path}>
-                  Read more &#8594;
-                </Link>
+                <Link to={frontmatter.path}>Read more</Link> &#8594;
               </div>
             </div>
           )
