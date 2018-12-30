@@ -22,7 +22,6 @@ const Layout = ({ children }) => (
             twitter
             github
             codepen
-            metaKeywords
           }
         }
       }
@@ -37,10 +36,6 @@ const Layout = ({ children }) => (
               {
                 name: 'description',
                 content: siteMetadata.description,
-              },
-              {
-                name: 'keywords',
-                content: siteMetadata.metaKeywords.join(', '),
               },
             ]}
           >
