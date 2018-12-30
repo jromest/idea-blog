@@ -14,7 +14,6 @@ module.exports = {
         includePaths: ['./node_modules/'],
       },
     },
-    'gatsby-plugin-react-helmet',
     {
       resolve: 'gatsby-source-filesystem',
       options: {
@@ -36,8 +35,17 @@ module.exports = {
               },
             },
           },
+          {
+            resolve: 'gatsby-remark-images',
+            options: {
+              maxWidth: 590,
+            },
+          },
         ],
       },
     },
+    'gatsby-transformer-sharp',
+    'gatsby-plugin-sharp',
+    'gatsby-plugin-react-helmet',
   ],
 }
