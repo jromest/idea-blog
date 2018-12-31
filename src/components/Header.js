@@ -8,7 +8,7 @@ const Header = props => (
       <Link to="/" className="title base-link">
         {props.title}
       </Link>
-      <Social {...props} />
+      <Social {...props} color="#fff" />
     </div>
   </header>
 )

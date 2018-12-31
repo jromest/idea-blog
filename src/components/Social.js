@@ -3,7 +3,7 @@ import TwitterIcon from './Icons/twitter'
 import GithubIcon from './Icons/github'
 import CodepenIcon from './Icons/codepen'
 
-const Social = ({ twitter, github, codepen }) => (
+const Social = ({ twitter, github, codepen, color }) => (
   <div>
     <a
       className="social-icon"
@@ -11,7 +11,7 @@ const Social = ({ twitter, github, codepen }) => (
       target="_blank"
       rel="noopener noreferrer"
     >
-      <TwitterIcon color="#fff" />
+      <TwitterIcon color={color} />
     </a>
     <a
       className="social-icon"
@@ -19,7 +19,7 @@ const Social = ({ twitter, github, codepen }) => (
       target="_blank"
       rel="noopener noreferrer"
     >
-      <GithubIcon color="#fff" />
+      <GithubIcon color={color} />
     </a>
     <a
       className="social-icon"
@@ -27,7 +27,7 @@ const Social = ({ twitter, github, codepen }) => (
       target="_blank"
       rel="noopener noreferrer"
     >
-      <CodepenIcon color="#fff" />
+      <CodepenIcon color={color} />
     </a>
   </div>
 )
