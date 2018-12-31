@@ -1,11 +1,11 @@
 /* Footer Component Style */
 
 .footer {
-  background-color: $darker-gray;
+  background-color: $white;
 
   &-wrapper {
     justify-content: space-between;
     align-items: center;
-    color: $white;
+    color: $dark-gray;
   }
 }
