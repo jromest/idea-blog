@@ -1,10 +1,10 @@
 import React from 'react'
 
-const Codepen = () => (
+const Codepen = props => (
   <svg
     xmlns="http://www.w3.org/2000/svg"
     viewBox="0 0 512 512"
-    fill="#fff"
+    fill={props.color}
     width="30"
     height="30"
   >

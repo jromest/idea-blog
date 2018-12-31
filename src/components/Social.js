@@ -11,7 +11,7 @@ const Social = ({ twitter, github, codepen }) => (
       target="_blank"
       rel="noopener noreferrer"
     >
-      <TwitterIcon />
+      <TwitterIcon color="#fff" />
     </a>
     <a
       className="social-icon"
@@ -19,7 +19,7 @@ const Social = ({ twitter, github, codepen }) => (
       target="_blank"
       rel="noopener noreferrer"
     >
-      <GithubIcon />
+      <GithubIcon color="#fff" />
     </a>
     <a
       className="social-icon"
@@ -27,7 +27,7 @@ const Social = ({ twitter, github, codepen }) => (
       target="_blank"
       rel="noopener noreferrer"
     >
-      <CodepenIcon />
+      <CodepenIcon color="#fff" />
     </a>
   </div>
 )
