@@ -1,0 +1,14 @@
+/* 404 Page Styles */
+
+.notfound {
+  height: 75vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+
+  &-title {
+    line-height: 2 * $base-line-height;
+  }
+}
