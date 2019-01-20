@@ -7,5 +7,16 @@
     justify-content: space-between;
     align-items: center;
     color: $dark-gray;
+    padding: 2em 1em;
+
+    @include bp-small {
+      text-align: center;
+    }
+
+    .footer-copyright {
+      @include bp-small {
+        margin-top: 1em;
+      }
+    }
   }
 }
