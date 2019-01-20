@@ -18,6 +18,7 @@ const Layout = ({ children }) => (
         site {
           siteMetadata {
             title
+            author
             description
             twitter
             github
@@ -41,9 +42,9 @@ const Layout = ({ children }) => (
           >
             <html lang="en" />
           </Helmet>
-          <Header title={siteMetadata.title} />
+          <Header name={siteMetadata.author} />
           <main>{children}</main>
-          <Footer title={siteMetadata.title} />
+          <Footer name={siteMetadata.author} />
         </>
       )
     }}

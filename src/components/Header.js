@@ -6,7 +6,7 @@ const Header = props => (
   <header className="header">
     <div className="container container-main header-wrapper">
       <Link to="/" className="title base-link">
-        {props.title}
+        {props.name}
       </Link>
       <Social color="#fff" />
     </div>
