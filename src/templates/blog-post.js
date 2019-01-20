@@ -2,6 +2,7 @@ import React from 'react'
 import { Link, graphql } from 'gatsby'
 import Helmet from 'react-helmet'
 import Layout from '../components/Layout'
+import Bio from '../components/Bio'
 
 const Template = ({ data }) => {
   const { markdownRemark: post } = data
@@ -10,12 +11,20 @@ const Template = ({ data }) => {
 
   return (
     <Layout>
-      <div className="container container-blog blog-post-wrapper">
-        <Helmet title={title} />
-        <h1 className="blog-title">{title}</h1>
-        <div className="blog-date">{date}</div>
-        <div className="blog-post" dangerouslySetInnerHTML={{ __html: html }} />
-        <Link to="/">Go back home...</Link>
+      <Helmet title={title} />
+      <div className="container container-main blog-post-wrapper">
+        <div className="container container-blog">
+          <h1 className="blog-title">{title}</h1>
+          <div className="blog-date">{date}</div>
+        </div>
+        <div className="image" />
+        <div
+          className="container container-blog blog-post"
+          dangerouslySetInnerHTML={{ __html: html }}
+        />
+        <div className="container container-blog">
+          <Bio />
+        </div>
       </div>
     </Layout>
   )

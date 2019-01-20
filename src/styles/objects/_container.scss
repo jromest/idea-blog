@@ -2,10 +2,10 @@
 
 .container {
   margin: 0 auto;
-  padding: 1.25em 1em;
 
   &-main {
     max-width: $wrapper-width;
+    padding: 1.25em 1em;
   }
 
   &-blog {
