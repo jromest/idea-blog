@@ -21,7 +21,7 @@ const Social = ({ color }) => (
     {data => {
       const { twitter, github, codepen } = data.site.siteMetadata
       return (
-        <div>
+        <div className="social">
           <a
             className="social-icon"
             href={twitter}

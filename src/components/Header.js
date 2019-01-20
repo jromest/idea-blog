@@ -13,6 +13,7 @@ const Header = props => (
         <li className="nav-item">Blog</li>
         <li className="nav-item">Contact</li>
       </nav>
+      <Social color="#fff" />
     </div>
   </header>
 )
