@@ -1,56 +1,50 @@
 /* Bio Section Styles */
 
-.bio-section {
-  background-color: $lighter-gray;
+.bio-container {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
 
-  .bio-container {
-    padding-top: 2 * $base-spacing-unit;
-    padding-bottom: 2 * $base-spacing-unit;
-    display: flex;
-    align-items: flex-start;
-    justify-content: flex-start;
+  @include bp-small {
+    flex-direction: column;
+  }
+
+  .avatar {
+    /* temporary */
+    background-color: #333;
+    height: 80px;
+    width: 80px;
+    /* ------ */
+    border-radius: 50%;
+    margin-bottom: $base-spacing-unit;
+    margin-right: $base-spacing-unit;
 
     @include bp-small {
-      flex-direction: column;
+      align-self: center;
+      margin-right: 0;
     }
+  }
 
-    .avatar {
-      /* temporary */
-      background-color: #333;
-      height: 80px;
-      width: 80px;
-      /* ------ */
-      border-radius: 50%;
+  .bio {
+    &-separator {
+      height: 5px;
+      width: 50px;
+      background-color: $base-secondary-color;
       margin-bottom: $base-spacing-unit;
-      margin-right: $base-spacing-unit;
+      border: none;
 
       @include bp-small {
-        align-self: center;
-        margin-right: 0;
+        margin-right: auto;
+        margin-left: auto;
       }
     }
 
-    .bio {
-      &-separator {
-        height: 5px;
-        width: 50px;
-        background-color: $base-secondary-color;
-        margin-bottom: $base-spacing-unit;
-        border: none;
+    p {
+      margin-bottom: 0;
+    }
 
-        @include bp-small {
-          margin-right: auto;
-          margin-left: auto;
-        }
-      }
-
-      p {
-        margin-bottom: 0;
-      }
-
-      @include bp-small {
-        text-align: center;
-      }
+    @include bp-small {
+      text-align: center;
     }
   }
 }
