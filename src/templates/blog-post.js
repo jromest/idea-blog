@@ -12,7 +12,7 @@ const Template = ({ data }) => {
   return (
     <Layout>
       <Helmet title={title} />
-      <div className="container container-main blog-post-wrapper">
+      <div className="blog-post-wrapper">
         <div className="container container-blog">
           <h1 className="blog-title">{title}</h1>
           <div className="blog-date">{date}</div>
