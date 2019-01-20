@@ -5,7 +5,7 @@ const Footer = props => (
   <footer className="footer">
     <div className="container container-main footer-wrapper flex-row">
       <Social color="#666" />
-      <div className="footer-copyright">&copy; 2018 {props.name}</div>
+      <div className="footer-copyright">&copy; 2019 {props.name}</div>
     </div>
   </footer>
 )
