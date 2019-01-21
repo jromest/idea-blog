@@ -5,12 +5,16 @@ import Hero from '../components/Hero'
 import Bio from '../components/Bio'
 
 const IndexPage = ({ data }) => {
-  const { edges: posts } = data.allMarkdownRemark
   const { siteMetadata } = data.site
+  const { author } = siteMetadata
 
   return (
     <Layout>
-      <Hero {...siteMetadata} />
+      <Hero
+        title={author}
+        description="I'm a front end web developer and designer."
+        isHomepage
+      />
       <div className="container container-main">
         <h2>Hi people</h2>
         <p>Welcome to your new Gatsby site.</p>
@@ -30,21 +34,10 @@ export const pageQuery = graphql`
   query IndexQuery {
     site {
       siteMetadata {
-        title
-        description
-      }
-    }
-    allMarkdownRemark(sort: { order: DESC, fields: [frontmatter___date] }) {
-      edges {
-        node {
-          excerpt(pruneLength: 250)
-          id
-          frontmatter {
-            title
-            date(formatString: "MMMM DD, YYYY")
-            path
-          }
-        }
+        author
+        twitter
+        github
+        codepen
       }
     }
   }
