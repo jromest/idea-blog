@@ -10,7 +10,7 @@ const BlogPage = ({ data }) => {
 
   return (
     <Layout>
-      <Hero {...siteMetadata} />
+      <Hero title={siteMetadata.title} description={siteMetadata.description} />
       <div className="container container-main blog">
         {posts.map(({ node: post }) => {
           const { frontmatter } = post
