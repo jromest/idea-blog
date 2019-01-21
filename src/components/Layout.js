@@ -2,17 +2,14 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import Helmet from 'react-helmet'
 import { StaticQuery, graphql } from 'gatsby'
+import Header from './Header'
+import Footer from './Footer'
 
 import 'typeface-lora'
 import 'typeface-karla'
 
+import '../styles/main.scss'
 import '../styles/prism-okaidia.css'
-
-import Header from './Header/header'
-import Footer from './Footer/footer'
-
-import '../styles/global.css'
-import '../styles/layout.css'
 
 const Layout = ({ children }) => (
   <StaticQuery
@@ -21,11 +18,11 @@ const Layout = ({ children }) => (
         site {
           siteMetadata {
             title
+            author
             description
             twitter
             github
             codepen
-            metaKeywords
           }
         }
       }
@@ -41,17 +38,13 @@ const Layout = ({ children }) => (
                 name: 'description',
                 content: siteMetadata.description,
               },
-              {
-                name: 'keywords',
-                content: siteMetadata.metaKeywords.join(', '),
-              },
             ]}
           >
             <html lang="en" />
           </Helmet>
-          <Header {...siteMetadata} title={siteMetadata.title} />
-          <div className="app-wrapper">{children}</div>
-          <Footer {...siteMetadata} title={siteMetadata.title} />
+          <Header name={siteMetadata.author} />
+          <main>{children}</main>
+          <Footer name={siteMetadata.author} />
         </>
       )
     }}

@@ -1,11 +1,9 @@
 import React from 'react'
 
-import './hero.css'
-
 const Hero = ({ title, description }) => (
-  <div className="hero-container">
-    <div className="hero-wrapper">
-      <h1 className="hero-title">{title}</h1>
+  <div className="hero">
+    <div className="container container-main hero-wrapper">
+      <h1 className="title">{title}</h1>
       <span>{description}</span>
     </div>
   </div>

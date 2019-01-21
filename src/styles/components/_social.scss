@@ -1,0 +1,14 @@
+/* Social Component Style */
+
+.social-icon {
+  border: none;
+  padding: 0 10px;
+
+  @include bp-small {
+    padding: 0 20px 0 0;
+
+    &:last-child {
+      padding: 0;
+    }
+  }
+}
