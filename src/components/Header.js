@@ -9,9 +9,11 @@ const Header = props => (
         {props.name}
       </Link>
       <nav className="nav">
-        <li className="nav-item">Portfolio</li>
-        <li className="nav-item">Blog</li>
-        <li className="nav-item">Contact</li>
+        <li>
+          <Link to="blog" className="nav-item">
+            Blog
+          </Link>
+        </li>
       </nav>
       <Social color="#fff" />
     </div>

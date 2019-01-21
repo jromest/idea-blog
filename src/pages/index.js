@@ -15,12 +15,6 @@ const IndexPage = ({ data }) => {
         description="I'm a front end web developer and designer."
         isHomepage
       />
-      <div className="container container-main">
-        <h2>Hi people</h2>
-        <p>Welcome to your new Gatsby site.</p>
-        <p>Now go build something great.</p>
-        <Link to="page-2/">Go to page 2</Link>
-      </div>
       <div className="bio-section">
         <Bio />
       </div>
