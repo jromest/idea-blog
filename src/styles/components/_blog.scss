@@ -6,6 +6,10 @@
 
   &-listing {
     margin-bottom: 2.5 * $base-spacing-unit;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
   }
 
   &-title {
