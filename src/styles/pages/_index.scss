@@ -1,5 +1,14 @@
 /* Home Page Styles */
 
+.section {
+  padding-top: 5em;
+  padding-bottom: 5em;
+
+  &-title {
+    text-align: center;
+  }
+}
+
 .bio-section {
   background-color: $lighter-gray;
   padding-top: 2 * $base-spacing-unit;
