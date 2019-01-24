@@ -24,30 +24,32 @@
       color: $white;
       font-weight: bold;
       font-size: 1.5em;
-      flex-grow: 1;
 
       @include bp-small {
         font-size: 1.25em;
       }
 
       @include bp-xsmall {
-        text-align: center;
+        margin: 0 auto;
       }
     }
 
     .nav {
       list-style: none;
       display: flex;
+      flex-grow: 1;
+      justify-content: flex-end;
+      margin-right: 1em;
 
       @include bp-small {
-        margin-top: 1em;
+        margin: 1em 0 0;
         justify-content: space-around;
         order: 3;
         flex-basis: 100%;
       }
 
       &-item {
-        margin-right: 2em;
+        margin-right: 1em;
         color: #fff;
         padding: 0.45em 0.75em;
         border-radius: 0.125em;
