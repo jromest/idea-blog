@@ -12,7 +12,7 @@ const IndexPage = ({ data }) => {
     <Layout>
       <Hero
         title={author}
-        description="I'm a front end web developer and designer."
+        description="front end web developer and designer"
         isHomepage
       />
       <div className="bio-section">
