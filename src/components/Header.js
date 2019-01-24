@@ -2,6 +2,13 @@ import React from 'react'
 import { Link } from 'gatsby'
 import Social from './Social'
 
+const navItems = [
+  {
+    name: 'Blog',
+    path: 'blog',
+  },
+]
+
 const Header = props => (
   <header className="header">
     <div className="container container-main header-wrapper flex-row">
@@ -9,11 +16,15 @@ const Header = props => (
         {props.name}
       </Link>
       <nav className="nav">
-        <li>
-          <Link to="blog" className="nav-item">
-            Blog
-          </Link>
-        </li>
+        {navItems.length !== 0
+          ? navItems.map((nav, index) => (
+              <li key={index}>
+                <Link to={nav.path} className="nav-item">
+                  {nav.name}
+                </Link>
+              </li>
+            ))
+          : null}
       </nav>
       <Social color="#fff" />
     </div>
