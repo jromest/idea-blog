@@ -38,7 +38,6 @@
     .nav {
       list-style: none;
       display: flex;
-      color: #fff;
 
       @include bp-small {
         margin-top: 1em;
@@ -49,6 +48,13 @@
 
       &-item {
         margin-right: 2em;
+        color: #fff;
+        padding: 0.45em 0.75em;
+        border-radius: 0.125em;
+
+        &:hover {
+          background-color: rgba(133, 58, 141, 0.25);
+        }
 
         @include bp-small {
           margin: 0;
