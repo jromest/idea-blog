@@ -7,6 +7,34 @@
   &-title {
     text-align: center;
   }
+
+  &-tech {
+    background-color: #dce9f4;
+    display: flex;
+    justify-content: space-around;
+    align-content: center;
+
+    @include bp-small {
+      flex-wrap: wrap;
+    }
+
+    .tech-icon {
+      width: 8%;
+
+      &:hover {
+        filter: grayscale(100%);
+      }
+
+      @include bp-small {
+        width: 20%;
+        margin: 1em;
+      }
+
+      @include bp-xsmall {
+        width: 35%;
+      }
+    }
+  }
 }
 
 .bio-section {

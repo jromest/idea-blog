@@ -3,6 +3,7 @@ import { Link, graphql } from 'gatsby'
 import Layout from '../components/Layout'
 import Hero from '../components/Hero'
 import Bio from '../components/Bio'
+import Tech from '../components/Tech'
 
 const IndexPage = ({ data }) => {
   const { siteMetadata } = data.site
@@ -48,16 +49,8 @@ const IndexPage = ({ data }) => {
         </ul>
         <p>View more on my Github...</p>
       </div>
-      <div className="container container-main section">
-        <h2 className="section-title">Technologies I've Work With</h2>
-        <ul>
-          <li>Javascript</li>
-          <li>NodeJS</li>
-          <li>ReactJS</li>
-          <li>SASS</li>
-          <li>CSS 3</li>
-          <li>HTML 5</li>
-        </ul>
+      <div className="container section section-tech">
+        <Tech imgClassName="tech-icon" />
       </div>
       <div className="container container-main section">
         <h2 className="section-title">Stay Connected</h2>
