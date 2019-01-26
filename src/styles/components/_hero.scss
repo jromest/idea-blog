@@ -13,7 +13,6 @@
 
       .home-title {
         font-size: 3em;
-        line-height: 2 * $base-line-height;
 
         @include bp-small {
           font-size: 2.5em;
@@ -22,7 +21,6 @@
 
       .home-description {
         font-weight: initial;
-        line-height: 1.5 * $base-line-height;
       }
     }
   }
