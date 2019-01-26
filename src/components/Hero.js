@@ -7,6 +7,12 @@ const Hero = ({ title, description, isHomepage }) => (
         <React.Fragment>
           <h1 className="home-title">Hi, I'm {title}</h1>
           <h3 className="home-description">{description}</h3>
+          <div className="home-cta">
+            <button className="btn btn-primary">Let's work together</button>
+            <button className="btn btn-secondary">
+              Check out my projects &#8594;
+            </button>
+          </div>
         </React.Fragment>
       ) : (
         <React.Fragment>
