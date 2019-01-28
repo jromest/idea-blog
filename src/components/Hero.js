@@ -5,7 +5,9 @@ const Hero = ({ title, description, isHomepage }) => (
     <div className="container container-main hero-wrapper">
       {isHomepage ? (
         <React.Fragment>
-          <h1 className="home-title">Hi, I'm {title}</h1>
+          <h1 className="home-title">
+            Hi, I'm <span className="home-title-name">{title}</span>
+          </h1>
           <h3 className="home-description">{description}</h3>
           <div className="home-cta">
             <button className="btn btn-primary">Let's work together</button>
