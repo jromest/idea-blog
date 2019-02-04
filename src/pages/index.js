@@ -60,9 +60,27 @@ const IndexPage = ({ data }) => {
           probably watch movies or reading books.
         </p>
       </div>
-      <div className="container container-main section">
-        <h2 className="section-title">Writings</h2>
-        <h4>Coming soon...</h4>
+      <div className="container section section-blog">
+        <div className="container container-main section-blog--container">
+          <h2 className="section-title">Blog</h2>
+          <h4>Coming soon...</h4>
+          <p>
+            I'm working on a blog to share my ideas, document my learning
+            journey, and write articles about what I've learned. Mainly about
+            learning to code, web development, and javascript.
+          </p>
+          <p>
+            Say hi on twitter{' '}
+            <a
+              href="https://mobile.twitter.com/jrom_est"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              @jrom_est
+            </a>{' '}
+            for future updates.
+          </p>
+        </div>
       </div>
       <div className="container container-main section">
         <h2 className="section-title">Projects and Works</h2>

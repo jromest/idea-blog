@@ -6,13 +6,17 @@
   font-size: 1.125em;
   line-height: 1.5 * $base-line-height;
 
+  p:last-child {
+    margin-bottom: 0;
+  }
+
   @include bp-small {
     padding-top: 3em;
     padding-bottom: 3em;
   }
 
   &-title {
-    text-align: center;
+    // padding-bottom: 1em;
   }
 
   &-about {
@@ -51,6 +55,17 @@
           margin-right: 1em;
         }
       }
+    }
+  }
+
+  &-blog {
+    background-color: $lighter-gray;
+    padding-left: 0;
+    padding-right: 0;
+
+    &--container {
+      padding-top: 0;
+      padding-bottom: 0;
     }
   }
 
