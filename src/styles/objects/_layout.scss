@@ -7,6 +7,18 @@
 .flex-row {
   display: flex;
 
+  &-half {
+    justify-content: space-between;
+
+    .flex-col {
+      max-width: 45%;
+
+      @include bp-small {
+        max-width: 100%;
+      }
+    }
+  }
+
   @include bp-small {
     display: block;
   }

@@ -20,7 +20,7 @@ const IndexPage = ({ data }) => {
         isHomepage
       />
       <div className="container container-main section">
-        <div className="flex-row section-about">
+        <div className="flex-row flex-row-half section-about">
           <div className="flex-col section-about-container">
             <img
               className="section-about-container--image"

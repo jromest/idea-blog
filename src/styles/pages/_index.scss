@@ -20,7 +20,6 @@
   }
 
   &-about {
-    justify-content: space-between;
     padding-bottom: 5em;
 
     @include bp-small {
@@ -28,12 +27,7 @@
     }
 
     &-container {
-      max-width: 45%;
       align-self: center;
-
-      @include bp-small {
-        max-width: 100%;
-      }
 
       .about-list {
         list-style: none;
