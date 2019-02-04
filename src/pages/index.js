@@ -83,13 +83,79 @@ const IndexPage = ({ data }) => {
         </div>
       </div>
       <div className="container container-main section">
-        <h2 className="section-title">Projects and Works</h2>
-        <ul>
-          <li>Agroworks</li>
-          <li>filipino-bad-words-lists</li>
-          <li>The old creative website</li>
-        </ul>
-        <p>View more on my Github...</p>
+        <h2 className="section-title">Projects</h2>
+
+        {[
+          {
+            name: 'Agroworks',
+            description:
+              'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptatum qui velit assumenda tenetur, ut perferendis placeat architecto!',
+            imageSrc: webDesignImage,
+            livePreview: '#',
+            source: 'https://github.com/jromest/agroworks',
+          },
+          {
+            name: 'IdeaBox Creatives',
+            description:
+              'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptatum qui velit assumenda tenetur, ut perferendis placeat architecto!',
+            imageSrc: webDesignImage,
+            livePreview: 'https://jromest.github.io/ideabox-creatives/',
+            source: 'https://github.com/jromest/ideabox-creatives',
+          },
+        ].map((project, index) => (
+          <div key={index} className="flex-row flex-row-half section-project">
+            <div className="flex-col">
+              <img
+                className="section-about-container--image"
+                src={project.imageSrc}
+                alt={`screenshot of ${project.name}`}
+              />
+            </div>
+            <div className="flex-col section-project-details">
+              <h4>{project.name}</h4>
+              <p>{project.description}</p>
+              <a
+                className="section-project-link"
+                href={project.livePreview}
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Live Preview
+              </a>
+              <a
+                href={project.source}
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Source
+              </a>
+            </div>
+          </div>
+        ))}
+
+        <h3>Open Source</h3>
+        <h4>filipino-badwords-lists</h4>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum, totam
+          laboriosam? Id, ipsam eaque! Provident voluptates quisquam ut!
+          Doloremque veritatis consectetur repudiandae dolores, consequatur
+          maiores mollitia nulla et nihil pariatur.
+        </p>
+        <a
+          className="section-project-link"
+          href="https://www.npmjs.com/package/filipino-badwords-list"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          NPM Package
+        </a>
+        <a
+          href="https://github.com/jromest/filipino-badwords-list"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Source
+        </a>
       </div>
       <div className="container section section-tech">
         <Tech imgClassName="tech-icon" />

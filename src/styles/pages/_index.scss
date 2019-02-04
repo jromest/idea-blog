@@ -63,6 +63,21 @@
     }
   }
 
+  &-project {
+    padding-bottom: 5em;
+    align-items: center;
+
+    &-details {
+      @include bp-small {
+        padding-top: 1em;
+      }
+    }
+
+    &-link {
+      margin-right: 1em;
+    }
+  }
+
   &-tech {
     background-color: #dce9f4;
     display: flex;
