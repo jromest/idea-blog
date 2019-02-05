@@ -133,8 +133,34 @@ const IndexPage = ({ data }) => {
           </div>
         ))}
 
-        <h3>Open Source</h3>
-        <h4>filipino-badwords-lists</h4>
+        <h3 className="section-title">Open Source</h3>
+        <div className="section-project">
+          <h4>filipino-badwords-lists</h4>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum, totam
+            laboriosam? Id, ipsam eaque! Provident voluptates quisquam ut!
+            Doloremque veritatis consectetur repudiandae dolores, consequatur
+            maiores mollitia nulla et nihil pariatur.
+          </p>
+          <p>
+            <a
+              className="section-project-link"
+              href="https://www.npmjs.com/package/filipino-badwords-list"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              NPM Package
+            </a>
+            <a
+              href="https://github.com/jromest/filipino-badwords-list"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Source
+            </a>
+          </p>
+        </div>
+        <h4>freeCodeCamp 404 Page</h4>
         <p>
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum, totam
           laboriosam? Id, ipsam eaque! Provident voluptates quisquam ut!
@@ -143,18 +169,14 @@ const IndexPage = ({ data }) => {
         </p>
         <a
           className="section-project-link"
-          href="https://www.npmjs.com/package/filipino-badwords-list"
+          href="#"
           target="_blank"
           rel="noopener noreferrer"
         >
-          NPM Package
+          Live Preview
         </a>
-        <a
-          href="https://github.com/jromest/filipino-badwords-list"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Source
+        <a href="#" target="_blank" rel="noopener noreferrer">
+          Pull Request
         </a>
       </div>
       <div className="container section section-tech">
