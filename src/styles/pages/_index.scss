@@ -106,6 +106,22 @@
       }
     }
   }
+
+  &-contact {
+    &--cta {
+      .btn-secondary {
+        color: $base-primary-color;
+      }
+
+      .base-link:first-child .btn {
+        margin-right: 0.5em;
+
+        @include bp-small {
+          margin: 0 0.5em 1em 0;
+        }
+      }
+    }
+  }
 }
 
 .bio-section {

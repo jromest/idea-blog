@@ -182,12 +182,27 @@ const IndexPage = ({ data }) => {
       <div className="container section section-tech">
         <Tech imgClassName="tech-icon" />
       </div>
-      <div className="container container-main section">
+      <div className="container container-main section section-contact">
         <h2 className="section-title">Stay Connected</h2>
-        <ul>
-          <li>Email</li>
-          <li>Twitter</li>
-        </ul>
+        <p>
+          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptatum
+          qui velit assumenda tenetur, ut perferendis placeat architecto!
+        </p>
+        <div className="section-contact--cta">
+          <a href="mailto:jromestiller@gmail.com" className="base-link">
+            <button className="btn btn-primary">Send me an email</button>
+          </a>
+          <a
+            className="base-link"
+            href="https://mobile.twitter.com/jrom_est"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <button className="btn btn-secondary">
+              Say hi on twitter &#8594;
+            </button>
+          </a>
+        </div>
       </div>
       <div className="bio-section">
         <Bio />
