@@ -1,11 +1,16 @@
 import React from 'react'
 import { Link } from 'gatsby'
+import { Link as ScrollTo } from 'react-scroll'
 import Social from './Social'
 
 const navItems = [
   {
-    name: 'Blog',
-    path: 'blog',
+    name: 'Projects',
+    path: 'projectSection',
+  },
+  {
+    name: 'Contact',
+    path: 'contactSection',
   },
 ]
 
@@ -19,9 +24,15 @@ const Header = props => (
         {navItems.length !== 0
           ? navItems.map((nav, index) => (
               <li key={index}>
-                <Link to={nav.path} className="nav-item">
+                <ScrollTo
+                  to={nav.path}
+                  smooth
+                  offset={-50}
+                  duration={500}
+                  className="nav-item"
+                >
                   {nav.name}
-                </Link>
+                </ScrollTo>
               </li>
             ))
           : null}
