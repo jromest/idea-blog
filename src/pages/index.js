@@ -89,7 +89,7 @@ const IndexPage = ({ data }) => {
           {
             name: 'Agroworks',
             description:
-              'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptatum qui velit assumenda tenetur, ut perferendis placeat architecto!',
+              'UI dashboard for an exchange platform for agricultural commodities trading. It was build during a hackathon using React and SASS and contributed to the UX/UI.',
             imageSrc: webDesignImage,
             livePreview: '#',
             source: 'https://github.com/jromest/agroworks',
@@ -97,7 +97,7 @@ const IndexPage = ({ data }) => {
           {
             name: 'IdeaBox Creatives',
             description:
-              'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptatum qui velit assumenda tenetur, ut perferendis placeat architecto!',
+              'It is a fictional creative landing page template. It is a personal project built with responsive flexbox, CSS, and jQuery. Feel free to use it as a starter for your website.',
             imageSrc: webDesignImage,
             livePreview: 'https://jromest.github.io/ideabox-creatives/',
             source: 'https://github.com/jromest/ideabox-creatives',
@@ -137,10 +137,10 @@ const IndexPage = ({ data }) => {
         <div className="section-project">
           <h4>filipino-badwords-lists</h4>
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum, totam
-            laboriosam? Id, ipsam eaque! Provident voluptates quisquam ut!
-            Doloremque veritatis consectetur repudiandae dolores, consequatur
-            maiores mollitia nulla et nihil pariatur.
+            My first npm package a highly consumable list of bad (profanity)
+            Filipino words. Inspired by badwords-list. If you know a Filipino
+            bad word(s) that is not on the list, please contribute to the list
+            and make the web a better place.
           </p>
           <p>
             <a
@@ -162,10 +162,9 @@ const IndexPage = ({ data }) => {
         </div>
         <h4>freeCodeCamp 404 Page</h4>
         <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum, totam
-          laboriosam? Id, ipsam eaque! Provident voluptates quisquam ut!
-          Doloremque veritatis consectetur repudiandae dolores, consequatur
-          maiores mollitia nulla et nihil pariatur.
+          My first contribution to freeCodeCamp, I made a freeCodeCamp themed
+          404 image, and the page displays a random quote. It was implemented
+          under <code>learn.freecodecamp.org</code> sub-domain.
         </p>
         <a
           className="section-project-link"
@@ -176,7 +175,7 @@ const IndexPage = ({ data }) => {
           Live Preview
         </a>
         <a href="#" target="_blank" rel="noopener noreferrer">
-          Pull Request
+          View Pull Request
         </a>
       </div>
       <div className="container section section-tech">
