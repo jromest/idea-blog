@@ -168,13 +168,17 @@ const IndexPage = ({ data }) => {
         </p>
         <a
           className="section-project-link"
-          href="#"
+          href="https://learn.freecodecamp.org/404"
           target="_blank"
           rel="noopener noreferrer"
         >
           Live Preview
         </a>
-        <a href="#" target="_blank" rel="noopener noreferrer">
+        <a
+          href="https://github.com/freeCodeCamp/learn/pull/194/"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
           View Pull Request
         </a>
       </div>
