@@ -29,7 +29,7 @@ const Header = props => (
                   smooth
                   offset={-50}
                   duration={500}
-                  className="nav-item"
+                  className="base-link nav-item"
                 >
                   {nav.name}
                 </ScrollTo>
