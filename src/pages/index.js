@@ -70,7 +70,7 @@ const IndexPage = ({ data }) => {
             learning to code, web development, and javascript.
           </p>
           <p>
-            Say hi on twitter{' '}
+            Follow me on twitter{' '}
             <a
               href="https://mobile.twitter.com/jrom_est"
               target="_blank"
