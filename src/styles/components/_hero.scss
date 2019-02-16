@@ -3,6 +3,49 @@
 .hero {
   background-color: $lighter-gray;
 
+  &-home {
+    background: linear-gradient(-150deg, #853a8d, #38273a);
+
+    .hero-wrapper {
+      height: 400px;
+      align-items: flex-start;
+      color: #fff;
+
+      @include bp-small {
+        height: 100%;
+        padding: 3em 1em;
+        align-items: center;
+      }
+
+      .home-title {
+        font-size: 3em;
+
+        &-name {
+          white-space: nowrap;
+        }
+
+        @include bp-small {
+          font-size: 2em;
+        }
+      }
+
+      .home-description {
+        font-weight: initial;
+      }
+
+      .home-cta {
+        .btn:first-child {
+          margin-right: 0.5em;
+
+          @include bp-small {
+            margin: 0;
+            margin-top: 1em;
+          }
+        }
+      }
+    }
+  }
+
   &-wrapper {
     height: 300px;
     display: flex;
@@ -21,8 +64,8 @@
       content: '';
       position: absolute;
       width: 100%;
-      height: 75%;
-      bottom: -5px;
+      height: 35%;
+      bottom: 5px;
       right: 0;
       left: 0;
       background-color: $base-secondary-color;

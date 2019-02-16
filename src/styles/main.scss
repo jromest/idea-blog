@@ -18,16 +18,20 @@
 /* Objects */
 @import 'objects/container';
 @import 'objects/layout';
+@import 'objects/button';
 
 /* Components */
 @import 'components/header';
 @import 'components/footer';
 @import 'components/hero';
 @import 'components/social';
-@import 'components/blog';
-@import 'components/blog-post';
 @import 'components/bio';
-@import 'components/notfound';
+
+/* Pages */
+@import 'pages/blog';
+@import 'pages/blog-post';
+@import 'pages/notfound';
+@import 'pages/index';
 
 /* Utilities */
 @import 'utilities/display';

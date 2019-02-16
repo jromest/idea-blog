@@ -1,5 +1,6 @@
 import React from 'react'
 import { StaticQuery, graphql } from 'gatsby'
+import avatarImg from '../assets/jrom-80x80.jpg'
 
 const Bio = () => (
   <StaticQuery
@@ -17,7 +18,7 @@ const Bio = () => (
       const { author } = data.site.siteMetadata
       return (
         <div className="container container-main bio-container">
-          <div className="avatar" src="" alt="Jerome Estiller" />
+          <img className="avatar" src={avatarImg} alt="Jerome Estiller" />
           <div className="bio">
             <hr className="bio-separator" />
             <h2>{author}</h2>
