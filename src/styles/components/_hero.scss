@@ -38,7 +38,8 @@
           margin-right: 0.5em;
 
           @include bp-small {
-            margin: 1em;
+            margin: 0;
+            margin-top: 1em;
           }
         }
       }
