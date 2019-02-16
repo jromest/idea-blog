@@ -14,6 +14,7 @@ const Hero = ({ title, description, isHomepage }) => (
             <ScrollTo
               to="contactSection"
               smooth
+              offset={-50}
               duration={500}
               className="base-link"
             >
@@ -22,6 +23,7 @@ const Hero = ({ title, description, isHomepage }) => (
             <ScrollTo
               to="projectSection"
               smooth
+              offset={-50}
               duration={500}
               className="base-link"
             >
