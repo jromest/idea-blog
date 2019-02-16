@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link as ScrollTo } from 'react-scroll'
 
 const Hero = ({ title, description, isHomepage }) => (
   <div className={isHomepage ? 'hero-home' : 'hero'}>
@@ -10,10 +11,24 @@ const Hero = ({ title, description, isHomepage }) => (
           </h1>
           <h3 className="home-description">{description}</h3>
           <div className="home-cta">
-            <button className="btn btn-primary">Let's work together</button>
-            <button className="btn btn-secondary">
-              Check out my projects &#8594;
-            </button>
+            <ScrollTo
+              to="contactSection"
+              smooth
+              duration={500}
+              className="base-link"
+            >
+              <button className="btn btn-primary">Let's work together</button>
+            </ScrollTo>
+            <ScrollTo
+              to="projectSection"
+              smooth
+              duration={500}
+              className="base-link"
+            >
+              <button className="btn btn-secondary">
+                Check out my projects &#8594;
+              </button>
+            </ScrollTo>
           </div>
         </React.Fragment>
       ) : (

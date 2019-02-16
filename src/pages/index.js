@@ -82,7 +82,7 @@ const IndexPage = ({ data }) => {
           </p>
         </div>
       </div>
-      <div className="container container-main section">
+      <div id="projectSection" className="container container-main section">
         <h2 className="section-title">Projects</h2>
 
         {[
@@ -185,7 +185,10 @@ const IndexPage = ({ data }) => {
       <div className="container section section-tech">
         <Tech imgClassName="tech-icon" />
       </div>
-      <div className="container container-main section section-contact">
+      <div
+        id="contactSection"
+        className="container container-main section section-contact"
+      >
         <h2 className="section-title">Stay Connected</h2>
         <p>
           Send me an email or say hi on twitter if you would like to chat. I'd
