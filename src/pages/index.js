@@ -185,8 +185,8 @@ const IndexPage = ({ data }) => {
       <div className="container container-main section section-contact">
         <h2 className="section-title">Stay Connected</h2>
         <p>
-          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptatum
-          qui velit assumenda tenetur, ut perferendis placeat architecto!
+          Send me an email or say hi on twitter if you would like to chat. I'd
+          love to hear from you.
         </p>
         <div className="section-contact--cta">
           <a href="mailto:jromestiller@gmail.com" className="base-link">
