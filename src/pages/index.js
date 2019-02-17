@@ -7,6 +7,8 @@ import Tech from '../components/Tech'
 
 import webDesignImage from '../assets/responsive-design.svg'
 import checkIcon from '../assets/checkmark-outline.svg'
+import agroworksImage from '../assets/agroworks-screenshot.jpg'
+import ideaboxImage from '../assets/ideabox-creative-screenshot.jpg'
 
 const IndexPage = ({ data }) => {
   const { siteMetadata } = data.site
@@ -90,7 +92,7 @@ const IndexPage = ({ data }) => {
             name: 'Agroworks',
             description:
               'UI dashboard for an exchange platform for agricultural commodities trading. It was build during a hackathon using React and SASS and contributed to the UX/UI.',
-            imageSrc: webDesignImage,
+            imageSrc: agroworksImage,
             livePreview: '#',
             source: 'https://github.com/jromest/agroworks',
           },
@@ -98,7 +100,7 @@ const IndexPage = ({ data }) => {
             name: 'IdeaBox Creatives',
             description:
               'It is a fictional creative landing page template. It is a personal project built with responsive flexbox, CSS, and jQuery. Feel free to use it as a starter for your website.',
-            imageSrc: webDesignImage,
+            imageSrc: ideaboxImage,
             livePreview: 'https://jromest.github.io/ideabox-creatives/',
             source: 'https://github.com/jromest/ideabox-creatives',
           },
@@ -106,7 +108,7 @@ const IndexPage = ({ data }) => {
           <div key={index} className="flex-row flex-row-half section-project">
             <div className="flex-col">
               <img
-                className="section-about-container--image"
+                className="section-project-image"
                 src={project.imageSrc}
                 alt={`screenshot of ${project.name}`}
               />

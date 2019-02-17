@@ -67,6 +67,10 @@
     padding-bottom: 5em;
     align-items: center;
 
+    &-image {
+      max-width: 100%;
+    }
+
     &-details {
       @include bp-small {
         padding-top: 1em;
