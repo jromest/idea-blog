@@ -1,6 +1,7 @@
 import React from 'react'
 import { Link, graphql } from 'gatsby'
 import Layout from '../components/Layout'
+import Seo from '../components/Seo'
 import Hero from '../components/Hero'
 import Bio from '../components/Bio'
 import Tech from '../components/Tech'
@@ -16,6 +17,10 @@ const IndexPage = ({ data }) => {
 
   return (
     <Layout>
+      <Seo
+        title={`${author} - Front End Web Developer and Designer`}
+        description="Jerome Estiller is a front end web developer and designer who loves to learn and code."
+      />
       <Hero
         title={author}
         description="front end web developer and designer"
