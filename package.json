@@ -1,5 +1,6 @@
 {
   "name": "idea-blog",
+  "private": true,
   "description": "A blog site to share ideas.",
   "version": "1.0.0",
   "author": "Jerome Estiller <jromestiller@gmail.com>",
