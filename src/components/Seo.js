@@ -26,17 +26,18 @@ const Seo = ({ meta, image, title, description, slug }) => (
       const metaImage = image ? `${siteMetadata.siteUrl}/${image}` : null
       const url = `${siteMetadata.siteUrl}${slug}`
 
+      let metaTitle
+
+      if (title !== '') {
+        metaTitle = slug !== '' ? `${title} - ${siteMetadata.title}` : title
+      } else {
+        metaTitle = `${siteMetadata.title} - ${siteMetadata.author}`
+      }
+
       return (
         <Helmet
           htmlAttributes={{ lang: 'en' }}
-          {...(title
-            ? {
-                title,
-                titleTemplate: `%s - ${siteMetadata.title}`,
-              }
-            : {
-                title: siteMetadata.title,
-              })}
+          title={metaTitle}
           meta={[
             {
               name: 'description',
@@ -53,7 +54,7 @@ const Seo = ({ meta, image, title, description, slug }) => (
             },
             {
               name: 'twitter:title',
-              content: title || siteMetadata.title,
+              content: metaTitle,
             },
             {
               name: 'twitter:site',
@@ -70,7 +71,7 @@ const Seo = ({ meta, image, title, description, slug }) => (
             // Open Graph data
             {
               property: 'og:title',
-              content: title || siteMetadata.title,
+              content: metaTitle,
             },
             {
               property: 'og:type',
