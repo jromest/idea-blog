@@ -93,7 +93,7 @@ const IndexPage = ({ data }) => {
             description:
               'UI dashboard for an exchange platform for agricultural commodities trading. It was build during a hackathon using React and SASS and contributed to the UX/UI.',
             imageSrc: agroworksImage,
-            livePreview: '#',
+            livePreview: 'https://jromest.github.io/agroworks/#/dashboard',
             source: 'https://github.com/jromest/agroworks',
           },
           {
