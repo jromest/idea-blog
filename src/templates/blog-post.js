@@ -1,17 +1,17 @@
 import React from 'react'
 import { Link, graphql } from 'gatsby'
-import Helmet from 'react-helmet'
 import Layout from '../components/Layout'
+import Seo from '../components/Seo'
 import Bio from '../components/Bio'
 
 const Template = ({ data }) => {
   const { markdownRemark: post } = data
   const { frontmatter, html } = post
-  const { title, date } = frontmatter
+  const { title, date, path } = frontmatter
 
   return (
     <Layout>
-      <Helmet title={title} />
+      <Seo title={title} slug={path} />
       <div className="blog-post-wrapper">
         <div className="container container-blog">
           <h1 className="blog-title">{title}</h1>
