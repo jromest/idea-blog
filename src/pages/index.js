@@ -19,7 +19,8 @@ const IndexPage = ({ data }) => {
     <Layout>
       <Seo
         title={`${author} - Front End Web Developer and Designer`}
-        description="Jerome Estiller is a front end web developer and designer who loves to learn and code."
+        description="I'm a front end web developer and designer who loves to learn and code. I design
+        and develop experiences that make people's lives simple."
       />
       <Hero
         title={author}
