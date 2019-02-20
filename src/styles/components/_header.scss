@@ -36,16 +36,28 @@
 
     .nav {
       list-style: none;
-      display: flex;
       flex-grow: 1;
-      justify-content: flex-end;
       margin-right: 1em;
 
       @include bp-small {
         margin: 1em 0 0;
-        justify-content: space-around;
         order: 3;
         flex-basis: 100%;
+      }
+
+      &-list {
+        list-style: none;
+        margin: 0;
+        display: flex;
+        justify-content: flex-end;
+
+        @include bp-small {
+          justify-content: space-around;
+        }
+
+        &-item {
+          display: inline;
+        }
       }
 
       &-item {
