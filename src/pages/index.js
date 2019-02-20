@@ -28,7 +28,7 @@ const IndexPage = ({ data }) => {
         description="front end web developer and designer"
         isHomepage
       />
-      <div className="container container-main section">
+      <section className="container container-main section">
         <div className="flex-row flex-row-half section-about">
           <div className="flex-col section-about-container">
             <img
@@ -68,9 +68,9 @@ const IndexPage = ({ data }) => {
           Outside of work, I am probably running, trekking or hiking. Otherwise,
           probably watch movies or reading books.
         </p>
-      </div>
-      <div className="container section section-blog">
-        <div className="container container-main section-blog--container">
+      </section>
+      <section className="container section section-blog">
+        <article className="container container-main section-blog--container">
           <h2 className="section-title">Blog</h2>
           <h4>Coming soon...</h4>
           <p>
@@ -89,9 +89,9 @@ const IndexPage = ({ data }) => {
             </a>{' '}
             for future updates.
           </p>
-        </div>
-      </div>
-      <div id="projectSection" className="container container-main section">
+        </article>
+      </section>
+      <section id="projectSection" className="container container-main section">
         <h2 className="section-title">Projects</h2>
 
         {[
@@ -112,7 +112,10 @@ const IndexPage = ({ data }) => {
             source: 'https://github.com/jromest/ideabox-creatives',
           },
         ].map((project, index) => (
-          <div key={index} className="flex-row flex-row-half section-project">
+          <article
+            key={index}
+            className="flex-row flex-row-half section-project"
+          >
             <div className="flex-col">
               <img
                 className="section-project-image"
@@ -139,11 +142,11 @@ const IndexPage = ({ data }) => {
                 Source
               </a>
             </div>
-          </div>
+          </article>
         ))}
 
         <h3 className="section-title">Open Source</h3>
-        <div className="section-project">
+        <article className="section-project">
           <h4>filipino-badwords-lists</h4>
           <p>
             My first npm package a highly consumable list of bad (profanity)
@@ -168,33 +171,35 @@ const IndexPage = ({ data }) => {
               Source
             </a>
           </p>
-        </div>
-        <h4>freeCodeCamp 404 Page</h4>
-        <p>
-          My first contribution to freeCodeCamp, I made a freeCodeCamp themed
-          404 image, and the page displays a random quote. It was implemented
-          under <code>learn.freecodecamp.org</code> sub-domain.
-        </p>
-        <a
-          className="section-project-link"
-          href="https://learn.freecodecamp.org/404"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Live Preview
-        </a>
-        <a
-          href="https://github.com/freeCodeCamp/learn/pull/194/"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          View Pull Request
-        </a>
-      </div>
-      <div className="container section section-tech">
+        </article>
+        <article>
+          <h4>freeCodeCamp 404 Page</h4>
+          <p>
+            My first contribution to freeCodeCamp, I made a freeCodeCamp themed
+            404 image, and the page displays a random quote. It was implemented
+            under <code>learn.freecodecamp.org</code> sub-domain.
+          </p>
+          <a
+            className="section-project-link"
+            href="https://learn.freecodecamp.org/404"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Live Preview
+          </a>
+          <a
+            href="https://github.com/freeCodeCamp/learn/pull/194/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            View Pull Request
+          </a>
+        </article>
+      </section>
+      <section className="container section section-tech">
         <Tech imgClassName="tech-icon" />
-      </div>
-      <div
+      </section>
+      <section
         id="contactSection"
         className="container container-main section section-contact"
       >
@@ -218,10 +223,10 @@ const IndexPage = ({ data }) => {
             </button>
           </a>
         </div>
-      </div>
-      <div className="bio-section">
+      </section>
+      <section className="bio-section">
         <Bio />
-      </div>
+      </section>
     </Layout>
   )
 }
