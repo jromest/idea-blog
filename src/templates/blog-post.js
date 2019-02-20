@@ -12,20 +12,22 @@ const Template = ({ data }) => {
   return (
     <Layout>
       <Seo title={title} slug={path} />
-      <div className="blog-post-wrapper">
-        <div className="container container-blog">
-          <h1 className="blog-title">{title}</h1>
-          <div className="blog-date">{date}</div>
-        </div>
-        <div className="image" />
-        <div
-          className="container container-blog blog-post"
-          dangerouslySetInnerHTML={{ __html: html }}
-        />
-        <div className="container container-blog">
-          <Bio />
-        </div>
-      </div>
+      <main role="main">
+        <article className="blog-post-wrapper">
+          <header className="container container-blog">
+            <h1 className="blog-title">{title}</h1>
+            <div className="blog-date">{date}</div>
+          </header>
+          <div className="image" />
+          <div
+            className="container container-blog blog-post"
+            dangerouslySetInnerHTML={{ __html: html }}
+          />
+          <aside className="container container-blog">
+            <Bio />
+          </aside>
+        </article>
+      </main>
     </Layout>
   )
 }
