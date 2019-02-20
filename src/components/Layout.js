@@ -28,7 +28,7 @@ const Layout = ({ children }) => (
         <>
           <Seo />
           <Header name={siteMetadata.author} />
-          <main>{children}</main>
+          {children}
           <Footer name={siteMetadata.author} />
         </>
       )
