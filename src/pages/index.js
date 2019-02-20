@@ -21,6 +21,7 @@ const IndexPage = ({ data }) => {
         title={`${author} - Front End Web Developer and Designer`}
         description="I'm a front end web developer and designer who loves to learn and code. I design
         and develop experiences that make people's lives simple."
+        image="meta-image.jpg"
       />
       <Hero
         title={author}
