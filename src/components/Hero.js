@@ -2,8 +2,8 @@ import React from 'react'
 import { Link as ScrollTo } from 'react-scroll'
 
 const Hero = ({ title, description, isHomepage }) => (
-  <div className={isHomepage ? 'hero-home' : 'hero'}>
-    <div className="container container-main hero-wrapper">
+  <section className={isHomepage ? 'hero-home' : 'hero'}>
+    <article className="container container-main hero-wrapper">
       {isHomepage ? (
         <React.Fragment>
           <h1 className="home-title">
@@ -39,8 +39,8 @@ const Hero = ({ title, description, isHomepage }) => (
           <span>{description}</span>
         </React.Fragment>
       )}
-    </div>
-  </div>
+    </article>
+  </section>
 )
 
 export default Hero

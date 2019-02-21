@@ -11,7 +11,7 @@ const BlogPage = ({ data }) => {
   return (
     <Layout>
       <Hero title={siteMetadata.title} description={siteMetadata.description} />
-      <div className="container container-main blog">
+      <main role="main" className="container container-main blog">
         {posts.map(({ node: post }) => {
           const { frontmatter } = post
           return (
@@ -30,10 +30,10 @@ const BlogPage = ({ data }) => {
             </div>
           )
         })}
-      </div>
-      <div className="bio-section">
+      </main>
+      <aside className="bio-section">
         <Bio />
-      </div>
+      </aside>
     </Layout>
   )
 }

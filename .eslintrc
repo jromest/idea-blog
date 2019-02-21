@@ -1,9 +1,10 @@
 {
+  "extends": ["plugin:jsx-a11y/recommended"],
   "env": {
     "browser": true,
     "es6": true
   },
-  "plugins": ["react"],
+  "plugins": ["react", "jsx-a11y"],
   "globals": {
     "graphql": false
   },

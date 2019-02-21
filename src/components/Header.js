@@ -20,22 +20,24 @@ const Header = props => (
       <Link to="/" className="title base-link">
         {props.name}
       </Link>
-      <nav className="nav">
-        {navItems.length !== 0
-          ? navItems.map((nav, index) => (
-              <li key={index}>
-                <ScrollTo
-                  to={nav.path}
-                  smooth
-                  offset={-50}
-                  duration={500}
-                  className="base-link nav-item"
-                >
-                  {nav.name}
-                </ScrollTo>
-              </li>
-            ))
-          : null}
+      <nav className="nav" role="navigation">
+        <ul className="nav-list">
+          {navItems.length !== 0
+            ? navItems.map((nav, index) => (
+                <li key={index} className="nav-list-item">
+                  <ScrollTo
+                    to={nav.path}
+                    smooth
+                    offset={-50}
+                    duration={500}
+                    className="base-link nav-item"
+                  >
+                    {nav.name}
+                  </ScrollTo>
+                </li>
+              ))
+            : null}
+        </ul>
       </nav>
       <Social color="#fff" />
     </div>
