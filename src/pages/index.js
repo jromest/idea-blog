@@ -213,7 +213,7 @@ const IndexPage = ({ data }) => {
             love to hear from you.
           </p>
           <div className="section-contact--cta">
-            <a href="mailto:jromestiller@gmail.com" className="base-link">
+            <a href="mailto:jromest@gmail.com" className="base-link">
               <button className="btn btn-primary">Send me an email</button>
             </a>
             <a
