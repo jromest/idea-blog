@@ -23,6 +23,7 @@ const Social = ({ color }) => (
       return (
         <div className="social">
           <a
+            aria-label="twitter"
             className="social-icon"
             href={twitter}
             target="_blank"
@@ -31,6 +32,7 @@ const Social = ({ color }) => (
             <TwitterIcon color={color} />
           </a>
           <a
+            aria-label="github"
             className="social-icon"
             href={github}
             target="_blank"
@@ -39,6 +41,7 @@ const Social = ({ color }) => (
             <GithubIcon color={color} />
           </a>
           <a
+            aria-label="codepen"
             className="social-icon"
             href={codepen}
             target="_blank"
