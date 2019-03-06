@@ -1,7 +1,8 @@
 ---
-path: "/article-two"
-title: "Article Two"
-date: "2018-06-11T16:23:03+08:00"
+path: '/article-two'
+title: 'Article Two'
+date: '2018-06-11T16:23:03+08:00'
+excerpt: "I have printed it out, but the animated gif is not moving use a **kpop logo** that's not a kpop logo! ugh and what is a hamburger menu, this was not according to brief, and thats not what i saw in my head at all nor can you please change the color theme of the website to _pink and purple_? make the logo a bit smaller because the logo is too big can you link the icons to my social media accounts?"
 ---
 
 ### Article Two
