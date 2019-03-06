@@ -22,7 +22,9 @@ const BlogPage = ({ data }) => {
                 </Link>
               </h2>
               <hr className="blog-separator" />
-              <div className="blog-date">{frontmatter.date}</div>
+              <div className="blog-date">
+                {frontmatter.date} &bull; {post.timeToRead} min read
+              </div>
               <p className="blog-excerpt">{frontmatter.excerpt}</p>
               <div className="blog-readMore">
                 <Link to={frontmatter.path}>Read more</Link> &#8594;
@@ -52,6 +54,7 @@ export const pageQuery = graphql`
       edges {
         node {
           id
+          timeToRead
           frontmatter {
             title
             date(formatString: "MMMM DD, YYYY")
