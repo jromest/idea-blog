@@ -1,7 +1,8 @@
 ---
-path: "/article-three"
-title: "Article Three"
-date: "2018-06-11T17:19:48+08:00"
+path: '/article-three'
+title: 'Article Three'
+date: '2018-06-11T17:19:48+08:00'
+excerpt: 'Show pony curate herding cats, or digital literacy marketing computer development html roi feedback team website and ultimate measure of success bleeding edge. Blue money high turnaround rate dogpile that so shotgun approach open door policy.'
 ---
 
 ### Article Three

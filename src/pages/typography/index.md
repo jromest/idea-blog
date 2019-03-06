@@ -1,7 +1,8 @@
 ---
-path: "/typography"
-title: "Typography"
-date: "2018-07-08T18:55:48+08:00"
+path: '/typography'
+title: 'Typography'
+date: '2018-07-08T18:55:48+08:00'
+excerpt: 'Typography samples'
 ---
 
 # Typography

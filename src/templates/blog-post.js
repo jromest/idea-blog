@@ -6,7 +6,7 @@ import Bio from '../components/Bio'
 
 const Template = ({ data }) => {
   const { markdownRemark: post } = data
-  const { frontmatter, html } = post
+  const { frontmatter, html, timeToRead } = post
   const { title, date, path } = frontmatter
 
   return (
@@ -16,7 +16,9 @@ const Template = ({ data }) => {
         <article className="blog-post-wrapper">
           <header className="container container-blog">
             <h1 className="blog-title">{title}</h1>
-            <div className="blog-date">{date}</div>
+            <div className="blog-date">
+              {date} &bull; {timeToRead} min read
+            </div>
           </header>
           <div className="image" />
           <div
@@ -38,6 +40,7 @@ export const pageQuery = graphql`
   query BlogPostByPath($path: String!) {
     markdownRemark(frontmatter: { path: { eq: $path } }) {
       html
+      timeToRead
       frontmatter {
         title
         date(formatString: "MMMM DD, YYYY")

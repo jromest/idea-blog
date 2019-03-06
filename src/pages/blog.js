@@ -22,8 +22,10 @@ const BlogPage = ({ data }) => {
                 </Link>
               </h2>
               <hr className="blog-separator" />
-              <div className="blog-date">{frontmatter.date}</div>
-              <p className="blog-excerpt">{post.excerpt}</p>
+              <div className="blog-date">
+                {frontmatter.date} &bull; {post.timeToRead} min read
+              </div>
+              <p className="blog-excerpt">{frontmatter.excerpt}</p>
               <div className="blog-readMore">
                 <Link to={frontmatter.path}>Read more</Link> &#8594;
               </div>
@@ -51,12 +53,13 @@ export const pageQuery = graphql`
     allMarkdownRemark(sort: { order: DESC, fields: [frontmatter___date] }) {
       edges {
         node {
-          excerpt(pruneLength: 250)
           id
+          timeToRead
           frontmatter {
             title
             date(formatString: "MMMM DD, YYYY")
             path
+            excerpt
           }
         }
       }

@@ -1,7 +1,8 @@
 ---
-path: "/article-one"
-title: "Article One"
-date: "2018-06-11T15:50:31+08:00"
+path: '/article-one'
+title: 'Article One'
+date: '2018-06-11T15:50:31+08:00'
+excerpt: "Let's unpack that later turd polishing upstream selling, we need distributors to evangelize the new line to local markets vertical integration. It's a simple lift and shift job digitalize. It just needs more cowbell overcome key issues to meet key milestones to be inspired is to become creative, innovative and energized we want this philosophy to trickle down to all our stakeholders streamline."
 ---
 
 ### Article One
