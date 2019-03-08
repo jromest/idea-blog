@@ -7,11 +7,11 @@ import Bio from '../components/Bio'
 const Template = ({ data }) => {
   const { markdownRemark: post } = data
   const { frontmatter, html, timeToRead } = post
-  const { title, date, path } = frontmatter
+  const { title, date, path, excerpt } = frontmatter
 
   return (
     <Layout>
-      <Seo title={title} slug={path} />
+      <Seo title={title} description={excerpt} slug={path} />
       <main role="main">
         <article className="blog-post-wrapper">
           <header className="container container-blog">
@@ -45,6 +45,7 @@ export const pageQuery = graphql`
         title
         date(formatString: "MMMM DD, YYYY")
         path
+        excerpt
       }
     }
   }
