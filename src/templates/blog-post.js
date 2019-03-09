@@ -1,5 +1,5 @@
 import React from 'react'
-import { Link, graphql } from 'gatsby'
+import { graphql } from 'gatsby'
 import Img from 'gatsby-image'
 import Layout from '../components/Layout'
 import Seo from '../components/Seo'
@@ -26,7 +26,6 @@ const Template = ({ data }) => {
               {date} &bull; {timeToRead} min read
             </div>
           </header>
-          {/* <div className="image" /> */}
           {featuredImage && <Img fluid={featuredImage.childImageSharp.fluid} />}
           <div
             className="container container-blog blog-post"
