@@ -45,6 +45,7 @@ module.exports = {
               linkImagesToOriginal: false,
             },
           },
+          'gatsby-remark-external-links',
           'gatsby-remark-copy-linked-files',
         ],
       },
