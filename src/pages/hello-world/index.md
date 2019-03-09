@@ -2,6 +2,7 @@
 path: '/hello-world'
 title: 'Hello World: Coming Soon'
 date: '2019-03-11'
+featuredImage: './hello-world.png'
 excerpt: 'Working in progress'
 ---
 
