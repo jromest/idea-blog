@@ -1,5 +1,6 @@
 import React from 'react'
-import { Link, graphql } from 'gatsby'
+import { graphql } from 'gatsby'
+import Img from 'gatsby-image'
 import Layout from '../components/Layout'
 import Seo from '../components/Seo'
 import Bio from '../components/Bio'
@@ -7,11 +8,16 @@ import Bio from '../components/Bio'
 const Template = ({ data }) => {
   const { markdownRemark: post } = data
   const { frontmatter, html, timeToRead } = post
-  const { title, date, path } = frontmatter
+  const { title, date, path, excerpt, featuredImage } = frontmatter
 
   return (
     <Layout>
-      <Seo title={title} slug={path} />
+      <Seo
+        title={title}
+        description={excerpt}
+        slug={path}
+        image={featuredImage && featuredImage.publicURL}
+      />
       <main role="main">
         <article className="blog-post-wrapper">
           <header className="container container-blog">
@@ -20,7 +26,7 @@ const Template = ({ data }) => {
               {date} &bull; {timeToRead} min read
             </div>
           </header>
-          <div className="image" />
+          {featuredImage && <Img fluid={featuredImage.childImageSharp.fluid} />}
           <div
             className="container container-blog blog-post"
             dangerouslySetInnerHTML={{ __html: html }}
@@ -45,6 +51,15 @@ export const pageQuery = graphql`
         title
         date(formatString: "MMMM DD, YYYY")
         path
+        excerpt
+        featuredImage {
+          publicURL
+          childImageSharp {
+            fluid(maxWidth: 960) {
+              ...GatsbyImageSharpFluid
+            }
+          }
+        }
       }
     }
   }

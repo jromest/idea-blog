@@ -23,8 +23,17 @@ const Seo = ({ meta, image, title, description, slug }) => (
     render={data => {
       const { siteMetadata } = data.site
       const metaDescription = description || siteMetadata.description
-      const metaImage = image ? `${siteMetadata.siteUrl}/${image}` : null
       const url = `${siteMetadata.siteUrl}${slug}`
+
+      let imageUrl
+
+      if (image && image[0] !== '/') {
+        imageUrl = `/${image}`
+      } else {
+        imageUrl = `${image}`
+      }
+
+      const metaImage = image ? `${siteMetadata.siteUrl}${imageUrl}` : null
 
       let metaTitle
 
