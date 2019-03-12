@@ -1,9 +1,9 @@
 ---
 path: '/hello-world'
 title: 'Hello World: Coming Soon'
-date: '2019-03-11'
+date: '2019-03-12'
 featuredImage: './hello-world.png'
-excerpt: 'Working in progress'
+excerpt: 'This blog is a working in progress. Articles coming soon...'
 ---
 
 ## Articles coming soon...
