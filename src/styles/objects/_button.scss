@@ -1,0 +1,30 @@
+/* Button */
+
+.btn {
+  background: transparent;
+  padding: 0.5em 1em;
+  border-radius: 0.125em;
+  border: 2px solid transparent;
+  cursor: pointer;
+  transition: background-color 0.6s ease;
+
+  &-primary {
+    background-color: $yellow-gold;
+    color: $dark-purple;
+    border-color: $yellow-gold;
+
+    &:hover {
+      background-color: #f9bc04;
+      border-color: #f9bc04;
+    }
+  }
+
+  &-secondary {
+    color: $yellow-gold;
+    border-color: $yellow-gold;
+
+    &:hover {
+      background-color: rgba(255, 204, 51, 0.08);
+    }
+  }
+}

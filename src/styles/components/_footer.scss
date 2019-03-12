@@ -1,0 +1,24 @@
+/* Footer Component Style */
+
+.footer {
+  background-color: $white;
+
+  &-wrapper {
+    justify-content: space-between;
+    align-items: center;
+    color: $dark-gray;
+    padding: 2em 1em;
+
+    @include bp-small {
+      text-align: center;
+    }
+
+    .footer-copyright {
+      font-size: 1em;
+
+      @include bp-small {
+        margin-top: 1em;
+      }
+    }
+  }
+}

@@ -33,19 +33,18 @@ pre[class*='language-'] {
   margin: 0.5em 0;
   overflow: auto;
   border-radius: 0.3em;
-}
-
-:not(pre) > code[class*='language-'],
-pre[class*='language-'] {
   background: #272822;
 }
 
 /* Inline code */
 :not(pre) > code[class*='language-'] {
-  padding: 0.1em 0 0.2em 0.5em;
+  padding: 0.2em;
   margin-right: 0.2em;
   border-radius: 0.3em;
   white-space: normal;
+  background: #f5f2f0;
+  color: #272822;
+  text-shadow: 0 1px white;
 }
 
 .token.comment,

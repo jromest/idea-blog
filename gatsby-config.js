@@ -1,34 +1,22 @@
 module.exports = {
   siteMetadata: {
     title: 'Idea Blog',
+    author: 'Jerome Estiller',
     description: 'I write about web development, programming, and more...',
+    siteUrl: 'https://www.jeromestiller.com/',
+    twitterHandle: '@jrom_est',
     twitter: 'https://twitter.com/jrom_est',
     github: 'https://github.com/jromest',
     codepen: 'https://codepen.io/jromest/',
-    metaKeywords: [
-      'javascript',
-      'js',
-      'python',
-      'py',
-      'website',
-      'web',
-      'development',
-      'html',
-      'css',
-      'react',
-      'api',
-      'front',
-      'back',
-      'end',
-      'learn',
-      'tutorial',
-      'programming',
-    ],
   },
   pathPrefix: '/idea-blog',
   plugins: [
-    'gatsby-plugin-react-helmet',
-    'gatsby-transformer-remark',
+    {
+      resolve: 'gatsby-plugin-sass',
+      options: {
+        includePaths: ['./node_modules/'],
+      },
+    },
     {
       resolve: 'gatsby-source-filesystem',
       options: {
@@ -50,8 +38,20 @@ module.exports = {
               },
             },
           },
+          {
+            resolve: 'gatsby-remark-images',
+            options: {
+              maxWidth: 700,
+              linkImagesToOriginal: false,
+            },
+          },
+          'gatsby-remark-external-links',
+          'gatsby-remark-copy-linked-files',
         ],
       },
     },
+    'gatsby-transformer-sharp',
+    'gatsby-plugin-sharp',
+    'gatsby-plugin-react-helmet',
   ],
 }

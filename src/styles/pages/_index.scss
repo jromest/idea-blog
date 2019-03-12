@@ -1,0 +1,139 @@
+/* Home Page Styles */
+
+.section {
+  padding-top: 5em;
+  padding-bottom: 5em;
+  font-size: 1.125em;
+  line-height: 1.5 * $base-line-height;
+
+  p:last-child {
+    margin-bottom: 0;
+  }
+
+  @include bp-small {
+    padding-top: 3em;
+    padding-bottom: 3em;
+  }
+
+  &-title {
+    padding-bottom: 1em;
+  }
+
+  &-about {
+    padding-bottom: 5em;
+
+    @include bp-small {
+      padding-bottom: 3em;
+    }
+
+    &-container {
+      align-self: center;
+
+      .about-list {
+        list-style: none;
+        line-height: 2 * $base-line-height;
+
+        @include bp-small {
+          padding: 3em 1em 0;
+          margin: 0;
+        }
+
+        &-item {
+          display: flex;
+          align-items: center;
+        }
+
+        &-image {
+          width: 1.25em;
+          height: 100%;
+          margin-right: 1em;
+        }
+      }
+    }
+  }
+
+  &-blog {
+    background-color: $lighter-gray;
+    padding-left: 0;
+    padding-right: 0;
+
+    &--container {
+      padding-top: 0;
+      padding-bottom: 0;
+    }
+  }
+
+  &-project {
+    padding-bottom: 5em;
+    align-items: center;
+
+    &-image {
+      max-width: 100%;
+    }
+
+    &-details {
+      @include bp-small {
+        padding-top: 1em;
+      }
+    }
+
+    &-link {
+      margin-right: 1em;
+    }
+  }
+
+  &-tech {
+    background-color: #dce9f4;
+    display: flex;
+    justify-content: space-around;
+    align-content: center;
+
+    @include bp-small {
+      flex-wrap: wrap;
+    }
+
+    .tech-icon {
+      width: 8%;
+      height: 100%;
+      transition: all 0.6s ease;
+
+      &:hover {
+        filter: grayscale(100%);
+        transform: scale(0.9);
+      }
+
+      @include bp-small {
+        width: 20%;
+        margin: 1em;
+      }
+
+      @include bp-xsmall {
+        width: 35%;
+      }
+    }
+  }
+
+  &-contact {
+    &--cta {
+      font-size: 1rem;
+
+      .btn-secondary {
+        color: $base-primary-color;
+      }
+
+      .base-link:first-child .btn {
+        margin-right: 0.5em;
+
+        @include bp-small {
+          margin: 0 0.5em 1em 0;
+        }
+      }
+    }
+  }
+}
+
+.bio-section {
+  background-color: $lighter-gray;
+  padding-top: 2 * $base-spacing-unit;
+  padding-bottom: 2 * $base-spacing-unit;
+}
