@@ -1,9 +1,9 @@
-import React from "react"
-import PropTypes from "prop-types"
+import React from 'react'
+import PropTypes from 'prop-types'
 
 export default function HTML(props) {
   return (
-    <html {...props.htmlAttributes}>
+    <html {...props.htmlAttributes} lang="en">
       <head>
         <meta charSet="utf-8" />
         <meta httpEquiv="x-ua-compatible" content="ie=edge" />
@@ -12,6 +12,14 @@ export default function HTML(props) {
           content="width=device-width, initial-scale=1, shrink-to-fit=no"
         />
         {props.headComponents}
+        <script
+          dangerouslySetInnerHTML={{
+            __html: `
+            var clicky_site_ids = clicky_site_ids || []; clicky_site_ids.push(101176587);
+        `,
+          }}
+        />
+        <script async src="//static.getclicky.com/js" />
       </head>
       <body {...props.bodyAttributes}>
         {props.preBodyComponents}
