@@ -4,8 +4,8 @@ module.exports = {
     author: 'Jerome Estiller',
     description: 'I write about web development, programming, and more...',
     siteUrl: 'https://www.jeromestiller.com/',
-    twitterHandle: '@jrom_est',
-    twitter: 'https://twitter.com/jrom_est',
+    twitterHandle: '@jromest_',
+    twitter: 'https://twitter.com/jromest_',
     github: 'https://github.com/jromest',
     codepen: 'https://codepen.io/jromest/',
   },
@@ -17,6 +17,8 @@ module.exports = {
         includePaths: ['./node_modules/'],
       },
     },
+    'gatsby-plugin-sharp',
+    'gatsby-transformer-sharp',
     {
       resolve: 'gatsby-source-filesystem',
       options: {
@@ -50,8 +52,6 @@ module.exports = {
         ],
       },
     },
-    'gatsby-transformer-sharp',
-    'gatsby-plugin-sharp',
     'gatsby-plugin-react-helmet',
   ],
 }
