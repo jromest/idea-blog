@@ -17,6 +17,8 @@ module.exports = {
         includePaths: ['./node_modules/'],
       },
     },
+    'gatsby-plugin-sharp',
+    'gatsby-transformer-sharp',
     {
       resolve: 'gatsby-source-filesystem',
       options: {
@@ -50,8 +52,6 @@ module.exports = {
         ],
       },
     },
-    'gatsby-transformer-sharp',
-    'gatsby-plugin-sharp',
     'gatsby-plugin-react-helmet',
   ],
 }
