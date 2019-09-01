@@ -82,11 +82,11 @@ const IndexPage = ({ data }) => {
             <p>
               Follow me on twitter{' '}
               <a
-                href="https://mobile.twitter.com/jrom_est"
+                href="https://mobile.twitter.com/jromest_"
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                @jrom_est
+                @jromest_
               </a>{' '}
               for future updates.
             </p>
@@ -218,7 +218,7 @@ const IndexPage = ({ data }) => {
             </a>
             <a
               className="base-link"
-              href="https://mobile.twitter.com/jrom_est"
+              href="https://mobile.twitter.com/jromest_"
               target="_blank"
               rel="noopener noreferrer"
             >
